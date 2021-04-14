@@ -1,0 +1,91 @@
+.menuContainer {
+  position: relative;
+  // span {
+  //   position: absolute;
+  //   top: -100px;
+  // }
+  .wave-white_down {
+    background: url(../images/wave-white.png);
+    content: "";
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 10;
+  }
+
+  .wave-white_up {
+    background: url(../images/wave-white.png);
+    content: "";
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: 10;
+  }
+
+  .border-green {
+    --tw-border-opacity: 1;
+    border-color: rgba(11, 148, 70, var(--tw-border-opacity));
+  }
+  .border-yellow {
+    --tw-border-opacity: 1;
+    border-color: rgba(255, 210, 80, var(--tw-border-opacity));
+  }
+  .border-red {
+    --tw-border-opacity: 1;
+    border-color: rgba(215, 29, 36, var(--tw-border-opacity));
+  }
+
+  button:focus {
+    outline: 1px dotted;
+    outline: 5px auto rgba(11, 148, 70,1);
+    padding: 5px;
+}
+
+  .menu-pic {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+  }
+  .menu-pic2 {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+  }
+
+  .badget {
+    animation: rotate 1s linear;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes rotate {
+  // 0% {
+  //   transform: rotate(0deg);
+  // }
+  100% {
+    transform: rotate(180deg);
+  }
+}

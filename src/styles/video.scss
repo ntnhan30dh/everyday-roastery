@@ -1,0 +1,35 @@
+.videoContainer {
+  .wave-white-top {
+    background: url(../images/wave-white.png);
+    content: "";
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    z-index: 10;
+  }
+
+  .wave-green-bottom {
+    background: url(../images/wave-green_bottom.png);
+    content: "";
+    height: 45px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    z-index: 10;
+  }
+
+  .icon-div{
+    background: url(../images/bg_ground_-05.svg) repeat-x 0 / 100% auto;
+    background-position:center ;
+    animation: ani 10s linear infinite;
+  }
+}
