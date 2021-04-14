@@ -25,7 +25,7 @@ function OrderNow(props) {
       onOpen={() => setOpen(true)}
       open={open}
       trigger={
-        <button>
+        <button className="w-full"> 
           {props.display} 
         </button>
       }

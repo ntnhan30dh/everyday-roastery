@@ -2,7 +2,7 @@ import React, { useState} from "react"
 import Header from "../components/header"
 import SoMeBar from "../components/soMeBar"
 import MainSlides from "../components/mainSlides"
-// import Menu from "../components/menu"
+import Menu from "../components/menu"
 // import Followus from "../components/followus"
 // import Contact from "../components/contact"
 // import OrderNow from "../components/ordernow"
@@ -48,8 +48,8 @@ export default function Home() {
      < SoMeBar/>
     <Header />
     <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/>
-    {/* <Menu/>
-    <Followus/>
+    <Menu/>
+    {/* <Followus/>
     <Contact/> */}
     </div>
   )

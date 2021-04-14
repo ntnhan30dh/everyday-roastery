@@ -4,7 +4,6 @@ import { graphql, useStaticQuery } from "gatsby"
 import BackgroundImage from "gatsby-background-image"
 import Slider from "react-slick"
 
-import OrderNow from "./ordernow"
 import Slide from "./slide"
 
 const MainSlides = props => {
