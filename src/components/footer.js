@@ -1,24 +1,75 @@
 import React from "react"
-import { Link } from "gatsby"
+//import { Link } from "gatsby"
+import banani from "../images/logo-babani.png"
+import foodpanda from "../images/logo-foodpanda.png"
+import hungerstation from "../images/logo-hungerstation.png"
+import pedidosya from "../images/logo-pedidosya.png"
+import talabat from "../images/logo-talabat.png"
+import yemekspeti from "../images/logo-yemekspeti.png"
 
-const Contact = () => {
+import BackgroundImage from "gatsby-background-image"
+import { graphql, useStaticQuery } from "gatsby"
+
+const Footer = () => {
+  const data = useStaticQuery(graphql`
+    {
+      bg: file(relativePath: { eq: "footer-bg.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 2000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+    }
+  `)
+
+  const bg = data.bg.childImageSharp.fluid
+  const logoDiv = "mx-4"
   return (
-    <section className="footer">
-      <div className="blackDiv">
-      <ul>
+    <section className="footer bg-black">
+      <BackgroundImage
+        fluid={bg}
+        background-size="300px 100px"
+        className="bgContainer "
+      >
+        <h2 className="text-white uppercase font-extrabold text-xl mx-auto max-w-max pt-80">Everyday, your way, exlusively on</h2>
+        <ul className="flex max-w-max mx-auto px-80">
           <li>
-            <Link to="/imprint">Imprint</Link>
-            </li>
-            <li>
-            <Link to="/privacy">Privacy Policy </Link>
-            </li>
-            <li>
-            <Link to="/disclaimer">Disclaimer</Link>
-            </li>
+            <div className={logoDiv}>
+              <img src={hungerstation} alt="logo" />
+            </div>
+          </li>
+          <li>
+            <div className={logoDiv}>
+              <img src={pedidosya} alt="logo" />
+            </div>
+          </li>
+          <li>
+            <div className={logoDiv}>
+              <img src={talabat} alt="logo" />
+            </div>
+          </li>
+          <li>
+            <div className={logoDiv}>
+              <img src={foodpanda} alt="logo" />
+            </div>
+          </li>
+          <li>
+            <div className={logoDiv}>
+              <img src={yemekspeti} alt="logo" />
+            </div>
+          </li>
+          <li>
+            <div className={logoDiv}>
+              <img src={banani} alt="logo" />
+            </div>
+          </li>
         </ul>
-      </div>
+
+        <h1 className="text-white uppercase font-extrabold text-2xl mx-auto max-w-max pb-10"> more caffeine? sign up and get 10% off on first order</h1>
+      </BackgroundImage>
     </section>
   )
 }
 
-export default Contact
+export default Footer

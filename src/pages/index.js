@@ -3,8 +3,8 @@ import Header from "../components/header"
 import SoMeBar from "../components/soMeBar"
 import MainSlides from "../components/mainSlides"
 import Menu from "../components/menu"
-// import Followus from "../components/followus"
-// import Contact from "../components/contact"
+import Followus from "../components/followus"
+import Footer from "../components/footer"
 // import OrderNow from "../components/ordernow"
 import "../styles/index.scss"
 import "slick-carousel/slick/slick.css"; 
@@ -49,8 +49,8 @@ export default function Home() {
     <Header />
     <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/>
     <Menu/>
-    {/* <Followus/>
-    <Contact/> */}
+    <Followus/>
+    <Footer/>
     </div>
   )
 }

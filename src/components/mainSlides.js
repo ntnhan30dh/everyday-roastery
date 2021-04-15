@@ -1,7 +1,7 @@
 import React from "react"
-import Img from "gatsby-image"
+//import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+//import BackgroundImage from "gatsby-background-image"
 import Slider from "react-slick"
 
 import Slide from "./slide"

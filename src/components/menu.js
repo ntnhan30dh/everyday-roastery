@@ -53,13 +53,13 @@ const Menu = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     //  autoplay: true,
     autoplaySpeed: 3000,
   }
   return (
     <section className="menuContainer " id="menu">
-      <div className="menuText max-w-max mx-auto text-center py-10">
+      <div className="menuText max-w-max mx-auto text-center py-20">
         <h1 className="uppercase font-extrabold"> our menu</h1>
         <p className="text-xl">
           The <b>Everyday</b> menu has the treats for you. <br />
@@ -71,54 +71,49 @@ const Menu = () => {
         <Slider {...settings} className="">
           <OrderNow
             display={
-                <Img
-                  fluid={data.coffees.childImageSharp.fluid}
-                  className="menu-pic"
-                />
+              <Img
+                fluid={data.coffees.childImageSharp.fluid}
+                className="menu-pic"
+              />
             }
+            buttonStyle="w-full p-2"
           />
           <OrderNow
             display={
-                <Img
-                  fluid={data.specialties.childImageSharp.fluid}
-                  className="menu-pic"
-                />
+              <Img
+                fluid={data.specialties.childImageSharp.fluid}
+                className="menu-pic "
+              />
             }
+            buttonStyle="w-full p-2"
           />
           <OrderNow
             display={
-                <Img
-                  fluid={data.hotDrinks.childImageSharp.fluid}
-                  className="menu-pic"
-                />
+              <Img
+                fluid={data.hotDrinks.childImageSharp.fluid}
+                className="menu-pic "
+              />
             }
+            buttonStyle="w-full p-2"
           />
           <OrderNow
             display={
-                <Img
-                  fluid={data.coldDrinks.childImageSharp.fluid}
-                  className="menu-pic"
-                />
+              <Img
+                fluid={data.coldDrinks.childImageSharp.fluid}
+                className="menu-pic"
+              />
             }
+            buttonStyle="w-full p-2"
           />
           <OrderNow
             display={
-                <Img
-                  fluid={data.sweets.childImageSharp.fluid}
-                  className="menu-pic"
-                />
+              <Img
+                fluid={data.sweets.childImageSharp.fluid}
+                className="menu-pic"
+              />
             }
+            buttonStyle="w-full p-2"
           />
-          <OrderNow
-            display={
-                <Img
-                  fluid={data.coffees.childImageSharp.fluid}
-                  className="menu-pic"
-                />
-            }
-          />
-
-         
         </Slider>
       </div>
     </section>

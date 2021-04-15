@@ -1,6 +1,6 @@
 .menuContainer {
   .slick-slider {
-    height: 100%;
+  //  height: 100%;
 
     .menu-pic{
       width: 100%;
@@ -18,4 +18,9 @@
       bottom: 0;
     }
   }
+}
+
+.bgContainer{
+ background-position: bottom left !important;
+  background-size: 500px 200px !important;
 }
