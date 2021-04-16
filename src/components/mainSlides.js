@@ -18,7 +18,7 @@ const MainSlides = props => {
       }
       banner2: file(relativePath: { eq: "banner2.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 480) {
+          fluid(quality: 90, maxWidth: 2000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -26,7 +26,7 @@ const MainSlides = props => {
 
       banner3: file(relativePath: { eq: "banner3.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 480) {
+          fluid(quality: 90, maxWidth: 2000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
