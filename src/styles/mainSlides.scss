@@ -1,6 +1,14 @@
 .mainSlidesContainer {
   .slick-slider {
     height: 100%;
+
+    .slick-active{
+      .textDiv
+      {
+       // border: pink 2px solid;
+        animation: MoveUp 1s linear ;
+      }
+    }
    
     // next button
     .slick-next {
@@ -13,5 +21,15 @@
     .slick-dots{
       bottom: 0;
     }
+  }
+}
+
+
+@keyframes MoveUp {
+   0% {
+    transform: translateY(+100px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

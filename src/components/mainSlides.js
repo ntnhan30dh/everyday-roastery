@@ -41,11 +41,12 @@ const MainSlides = props => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    fade: true,
+    speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    //  autoplay: true,
-    autoplaySpeed: 3000,
+   autoplay: true,
+    autoplaySpeed: 4000,
     // customPaging: i => (
     //   <div
     //     className="dot"

@@ -51,10 +51,10 @@ const Menu = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
-    //  autoplay: true,
+     autoplay: true,
     autoplaySpeed: 3000,
   }
   return (
