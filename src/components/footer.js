@@ -26,13 +26,15 @@ const Footer = () => {
   const bg = data.bg.childImageSharp.fluid
   const logoDiv = "mx-4"
   return (
-    <section className="footer bg-black">
+    <section className="footerContainer bg-black">
       <BackgroundImage
         fluid={bg}
         background-size="300px 100px"
-        className="bgContainer "
+        className="footerBgContainer "
       >
-        <h2 className="text-white uppercase font-extrabold text-xl mx-auto max-w-max pt-80">Everyday, your way, exlusively on</h2>
+        <h2 className="text-white uppercase font-extrabold text-xl mx-auto max-w-max pt-60">
+          Everyday, your way, exlusively on
+        </h2>
         <ul className="flex max-w-max mx-auto px-80">
           <li>
             <div className={logoDiv}>
@@ -66,7 +68,13 @@ const Footer = () => {
           </li>
         </ul>
 
-        <h1 className="text-white uppercase font-extrabold text-2xl mx-auto max-w-max pb-10"> more caffeine? sign up and get 10% off on first order</h1>
+        <h1 className="text-white uppercase font-extrabold text-2xl mx-auto max-w-max pb-10">
+          {" "}
+          more caffeine? sign up and get 10% off on first order
+        </h1>
+        <div className="bottomLogo">
+          
+        </div>
       </BackgroundImage>
     </section>
   )
