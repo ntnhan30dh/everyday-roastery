@@ -1,10 +1,22 @@
 import React from "react"
-
+import fb from "../images/fb.png"
+import ig from "../images/ig.png"
 const SoMeBar = () => {
-
+const logoDiv= ""
   return (
-      <div className="soMeBar bg-black">
-        <h4>FB IG</h4>
+      <div className="soMeBar bg-black flex justify-between">
+        <div className="icons flex pl-20">
+        <div className={logoDiv}>
+              <img src={ig} alt="logo" />
+            </div>
+            <div className={logoDiv}>
+              <img src={fb} alt="logo" />
+            </div>
+        </div>
+        <div>
+        <h3 className="uppercase " style={{color: "#D8248D"}}> your coffee break, everyday</h3>
+        </div>
+        <div></div>
       </div>
       
   )

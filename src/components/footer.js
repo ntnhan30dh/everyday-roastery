@@ -9,11 +9,21 @@ import yemekspeti from "../images/logo-yemekspeti.png"
 
 import BackgroundImage from "gatsby-background-image"
 import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
+
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
     {
       bg: file(relativePath: { eq: "footer-bg.png" }) {
+        childImageSharp {
+          fluid(quality: 90, maxWidth: 2000) {
+            ...GatsbyImageSharpFluid_withWebp
+          }
+        }
+      }
+
+      logo: file(relativePath: { eq: "footer-logo.png" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 2000) {
             ...GatsbyImageSharpFluid_withWebp
@@ -32,7 +42,7 @@ const Footer = () => {
         background-size="300px 100px"
         className="footerBgContainer "
       >
-        <h2 className="text-white uppercase font-extrabold text-xl mx-auto max-w-max pt-60">
+        <h2 className="text-white uppercase font-extrabold text-xl mx-auto max-w-max pt-40">
           Everyday, your way, exlusively on
         </h2>
         <ul className="flex max-w-max mx-auto px-80">
@@ -68,13 +78,14 @@ const Footer = () => {
           </li>
         </ul>
 
-        <h1 className="text-white uppercase font-extrabold text-2xl mx-auto max-w-max pb-10">
+        <h1 className="text-white uppercase font-extrabold text-2xl mx-auto max-w-max pb-4">
           {" "}
           more caffeine? sign up and get 10% off on first order
         </h1>
-        <div className="bottomLogo">
-          
+        <div className="bottomLogo w-full flex justify-end ">
+        <Img fluid={data.logo.childImageSharp.fluid} className=" w-60 mr-20 mb-20 " />
         </div>
+      <div></div>
       </BackgroundImage>
     </section>
   )

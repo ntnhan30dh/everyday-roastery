@@ -1,7 +1,7 @@
 import React from "react"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import BackgroundImage from "gatsby-background-image"
+import OrderNow from "./ordernow"
 
 const OurStory = props => {
   const data = useStaticQuery(graphql`
@@ -24,7 +24,7 @@ const OurStory = props => {
 
       ourStoryLogo: file(relativePath: { eq: "ourStory-logo.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 2000) {
+          fluid(quality: 90, maxWidth: 500) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -66,14 +66,17 @@ const OurStory = props => {
           {" "}
           how it works{" "}
         </h1>
-        <div className="main relative w-full">
-
-        <div className="stepsContainer w-2/3">
+        <div className="main relative w-full pb-40">
+        <div className="stepsContainer w-2/3 text-center mx-auto">
         <Img fluid={data.steps.childImageSharp.fluid} className="menu-pic " />
-        <button>down load</button>
+        <OrderNow display={ 
+          <div className="orderBtn text-white p-4 uppercase font-extrabold bg-black">
+          download app
+          </div>
+        }/>
         </div>
-        <div className="imgWrapper absolute top-0 right-0">
-        <Img fluid={data.ourStoryLogo.childImageSharp.fluid} className="w-40 " />
+        <div className="imgWrapper absolute top-20 right-0">
+        <Img fluid={data.ourStoryLogo.childImageSharp.fluid} className="w-60 " />
         </div>
         </div>
       </div>
