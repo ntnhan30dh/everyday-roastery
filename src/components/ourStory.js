@@ -51,7 +51,7 @@ const OurStory = props => {
         </div>
         <Img fluid={data.banner.childImageSharp.fluid} className="menu-pic" />
 
-        <div className="bottomText absolute right-40 bottom-40 w-2/5">
+        <div className="bottomText absolute right-40 bottom-40 w-2/6">
           <p className="text-2xl">
             Great coffee that is our source of energy. However you coffee,{" "}
             <b>Everyday</b> baristas know how to brew; from iced vanilla
@@ -75,8 +75,8 @@ const OurStory = props => {
           </div>
         }/>
         </div>
-        <div className="imgWrapper absolute top-20 right-0">
-        <Img fluid={data.ourStoryLogo.childImageSharp.fluid} className="w-60 " />
+        <div className="imgWrapper absolute top-28 right-0">
+        <Img fluid={data.ourStoryLogo.childImageSharp.fluid} className="w-80 " />
         </div>
         </div>
       </div>

@@ -8,7 +8,7 @@ const Followus = () => {
     {
       whereToFindUs: file(relativePath: { eq: "whereToFindUs.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 900) {
+          fluid(quality: 90, maxWidth: 2000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

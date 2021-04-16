@@ -12,18 +12,22 @@ const Header = () => {
   }, [])
   let position = scroll ? "sticky top-0" : "absolute"
   return (
-    <header className={`headerWrapper ${position} z-50 w-full p-10`}>
+    <header className={`headerWrapper ${position} z-50 w-full p-10 ${scroll ? " bg-white" : ""}`}>
     
-      <nav className='nav flex justify-between w-full' >
-        <div className="left flex">
-          <div className=" w-36 lg:w-48 mr-8">
+      <nav className='nav flex justify-between items-center w-full' >
+        <div className="left flex ">
+          <Link to="/"  className=" w-36 lg:w-48 mr-8">
             <img src={logo} alt="logo" />
-          </div>
-              <Link to="/story" className="text-black uppercase  font-extrabold">Our Story</Link>
+          </Link>
+              <Link to="/story" className="text-black text-xl uppercase font-extrabold flex  items-center">
+               <span className="my-auto">
+                 Our Story
+                </span>
+                 </Link>
         </div>
         <div className="right">
         <OrderNow display={ 
-          <div className="orderBtn text-white p-4 uppercase font-extrabold bg-black">
+          <div className="orderBtn text-white text-xl p-4 uppercase font-extrabold bg-black ">
           Order Now!
           </div>
         }/>
