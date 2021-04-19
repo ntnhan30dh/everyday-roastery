@@ -41,8 +41,8 @@ const MainSlides = props => {
   const settings = {
     dots: true,
     infinite: true,
-    fade: true,
-    speed: 1500,
+   // fade: true,
+    speed: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
    autoplay: true,
@@ -86,7 +86,7 @@ const MainSlides = props => {
           banner={3}
           text={
             <h1 className="uppercase text-white text-8xl font-extrabold">
-              everyday <br /> treats in, <br /> abit 
+              everyday <br /> treats in, <br /> a bit 
             </h1>
           }
         />

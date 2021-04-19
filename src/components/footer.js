@@ -43,7 +43,7 @@ const Footer = () => {
         className="footerBgContainer "
       >
         <h2 className="text-white uppercase font-extrabold text-xl mx-auto max-w-max pt-40">
-          Everyday, your way, exlusively on
+          Everyday, your way <br/> exlusively on
         </h2>
         <ul className="flex max-w-max mx-auto px-80">
           <li>
@@ -78,10 +78,10 @@ const Footer = () => {
           </li>
         </ul>
 
-        <h1 className="text-white uppercase font-extrabold text-2xl mx-auto max-w-max pb-4">
+        {/* <h1 className="text-white uppercase font-extrabold text-2xl mx-auto max-w-max pb-4">
           {" "}
           more caffeine? sign up and get 10% off on first order
-        </h1>
+        </h1> */}
         <div className="bottomLogo w-full flex justify-end ">
         <Img fluid={data.logo.childImageSharp.fluid} className=" w-60 mr-20 mb-20 " />
         </div>

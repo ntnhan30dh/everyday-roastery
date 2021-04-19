@@ -12,7 +12,7 @@ const Header = () => {
   }, [])
   let position = scroll ? "sticky top-0" : "absolute"
   return (
-    <header className={`headerWrapper ${position} z-50 w-full p-10 ${scroll ? " bg-white" : ""}`}>
+    <header className={`headerWrapper ${position} z-50 w-full py-4 px-10 ${scroll ? " bg-white" : ""}`}>
     
       <nav className='nav flex justify-between items-center w-full' >
         <div className="left flex ">

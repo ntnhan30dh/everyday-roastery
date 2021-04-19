@@ -4,7 +4,7 @@ import ig from "../images/ig.png"
 const SoMeBar = () => {
 const logoDiv= "mx-2"
   return (
-      <div className="soMeBar bg-black flex justify-between">
+      <div className="soMeBar bg-black flex justify-between py-2">
         <div className="icons flex pl-20">
         <div className={logoDiv}>
               <img src={ig} alt="logo" />
