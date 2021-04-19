@@ -41,33 +41,23 @@ const MainSlides = props => {
   const settings = {
     dots: true,
     infinite: true,
-   // fade: true,
+    // fade: true,
     speed: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
-   autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 4000,
-    // customPaging: i => (
-    //   <div
-    //     className="dot"
-    //     style={{
-    //       width: "14px",
-    //       height: "14px",
-    //       borderRadius: "50%",
-    //       border: "1px solid white",
-    //     }}
-    //   >
-    //     {/* {i + 1} */}
-    //   </div>
-    // ),
+    
   }
+
+  const textSize = "text-5xl sm:text-8xl"
   return (
     <section className={`mainSlidesContainer bg-black  ${nudge}`}>
-      <Slider {...settings} className=" h-2/3">
+      <Slider {...settings} className=" ">
         <Slide
           banner={1}
           text={
-            <h1 className="uppercase text-white text-8xl font-extrabold">
+            <h1 className={`${textSize} uppercase text-white  font-extrabold`}>
               Good <br /> coffee <br /> good <br /> morning
             </h1>
           }
@@ -76,8 +66,8 @@ const MainSlides = props => {
         <Slide
           banner={2}
           text={
-            <h1 className="uppercase text-white text-8xl font-extrabold">
-            quality <br /> coffee, <br /> everyday 
+            <h1 className={`${textSize} uppercase text-white  font-extrabold`}>
+              quality <br /> coffee, <br /> everyday
             </h1>
           }
         />
@@ -85,8 +75,8 @@ const MainSlides = props => {
         <Slide
           banner={3}
           text={
-            <h1 className="uppercase text-white text-8xl font-extrabold">
-              everyday <br /> treats in, <br /> a bit 
+            <h1 className={`${textSize} uppercase text-white  font-extrabold`}>
+              everyday <br /> treats in <br /> a tap
             </h1>
           }
         />

@@ -25,7 +25,7 @@ const Footer = () => {
 
       logo: file(relativePath: { eq: "footer-logo.png" }) {
         childImageSharp {
-          fluid(quality: 90, maxWidth: 2000) {
+          fluid(quality: 90, maxWidth: 500) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -34,7 +34,7 @@ const Footer = () => {
   `)
 
   const bg = data.bg.childImageSharp.fluid
-  const logoDiv = "mx-4"
+  const logoDiv = " w-20 md:w-40 md:mx-4"
   return (
     <section className="footerContainer bg-black">
       <BackgroundImage
@@ -42,10 +42,10 @@ const Footer = () => {
         background-size="300px 100px"
         className="footerBgContainer "
       >
-        <h2 className="text-white uppercase font-extrabold text-xl mx-auto max-w-max pt-40">
-          Everyday, your way <br/> exlusively on
+        <h2 className="text-white text-center uppercase font-extrabold text-sm md:text-xl mx-auto max-w-max pt-10 md:pt-40">
+          Everyday, your way <br/> <br/> exlusively on
         </h2>
-        <ul className="flex max-w-max mx-auto px-80">
+        <ul className="flex w-full flex-wrap justify-center md:max-w-max mx-auto px-4 ">
           <li>
             <div className={logoDiv}>
               <img src={hungerstation} alt="logo" />
@@ -83,7 +83,7 @@ const Footer = () => {
           more caffeine? sign up and get 10% off on first order
         </h1> */}
         <div className="bottomLogo w-full flex justify-end ">
-        <Img fluid={data.logo.childImageSharp.fluid} className=" w-60 mr-20 mb-20 " />
+        <Img fluid={data.logo.childImageSharp.fluid} className=" w-20 md:w-40 lg:w-60 mr-2 md:mr-20 mb-4 md:mb-20 " />
         </div>
       <div></div>
       </BackgroundImage>

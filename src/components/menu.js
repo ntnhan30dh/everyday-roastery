@@ -56,6 +56,32 @@ const Menu = () => {
     slidesToScroll: 1,
      autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   }
   return (
     <section className="menuContainer " id="menu">
@@ -115,6 +141,13 @@ const Menu = () => {
             buttonStyle="w-full p-2"
           />
         </Slider>
+        {/* <div className="max-w-max mx-auto my-10">
+        <OrderNow display={ 
+          <div className="orderBtn text-white text-sm sm:text-xl p-2 md:p-4 uppercase font-extrabold bg-black  ">
+          Order Now!
+          </div>
+        }/>
+        </div> */}
       </div>
     </section>
   )
