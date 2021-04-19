@@ -41,7 +41,7 @@ const Slide = props => {
       background-size="contain"
       className="bgContainer h-screen  "
     >
-      <div className="textDiv pt-32 sm:pt-40  pl-20 sm:pl-40">
+      <div className="textDiv pt-32 sm:pt-40  pl-20 sm:pl-40  ">
         {props.text}
         <OrderNow
           display={

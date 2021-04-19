@@ -57,7 +57,7 @@ const MainSlides = props => {
         <Slide
           banner={1}
           text={
-            <h1 className={`${textSize} uppercase text-white  font-extrabold`}>
+            <h1 className={`${textSize} uppercase text-white  font-extrabold `}>
               Good <br /> coffee <br /> good <br /> morning
             </h1>
           }
