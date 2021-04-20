@@ -19,7 +19,7 @@ const MainSlides = props => {
     speed: 0,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+     autoplay: true,
     autoplaySpeed: 4000,
     
   }
