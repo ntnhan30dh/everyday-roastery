@@ -13,25 +13,21 @@ const Followus = () => {
           }
         }
       }
-  
     }
   `)
 
   return (
-    <section className="followUs w-full">
-      <h1 className="uppercase font-extrabold max-w-max mx-auto text-center pt-20">where to find us</h1>
-    <OrderNow
-            display={
-              <Img
-                fluid={data.whereToFindUs.childImageSharp.fluid}
-                className="menu-pic"
-                
-                className="w-full"
-              />
-            }
-            buttonStyle="w-full"
+    <section className="followUs w-full  mt-20›">
+      {/* <h1 className="uppercase font-extrabold max-w-max mx-auto text-center pt-20">where to find us</h1> */}
+      <OrderNow
+        display={
+          <Img
+            fluid={data.whereToFindUs.childImageSharp.fluid}
+            className="menu-pic w-full"
           />
-          
+        }
+        buttonStyle="w-full"
+      />
     </section>
   )
 }

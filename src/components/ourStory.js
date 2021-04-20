@@ -32,15 +32,10 @@ const OurStory = props => {
     }
   `)
 
-  const banner = data.banner.childImageSharp.fluid
 
   return (
     <section className="mainSlidesContainer ">
-      {/* <BackgroundImage
-        fluid={banner}
-        background-size="contain"
-        className="StoryBgContainer h-screen mt-40 "
-      ></BackgroundImage> */}
+     
       <div className="bannerContainer relative ">
         <div className="topText ml-4 sm:ml-20 lg:ml-0   -mb-32 md:-mb-44 mt-20 sm:mt-32 lg:mt-0 lg:absolute lg:top-32 2xl:top-60 left-0 lg:left-20 2xl:left-40">
           <span className="uppercase font-extrabold text-sm xxsm:text-lg xsm:text-2xl md:text-3xl">about everyday</span>
@@ -70,7 +65,7 @@ const OurStory = props => {
         <div className="stepsContainer w-full xl:w-2/3 text-center mx-auto">
         <Img fluid={data.steps.childImageSharp.fluid} className="menu-pic " />
         <OrderNow display={ 
-          <div className="orderBtn text-white p-4 uppercase font-extrabold bg-black">
+          <div className="orderBtn text-white p-4 uppercase font-extrabold bg-black text-blue">
           order now!
           </div>
         }/>

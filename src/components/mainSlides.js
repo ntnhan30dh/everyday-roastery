@@ -1,42 +1,16 @@
 import React from "react"
 //import Img from "gatsby-image"
-import { graphql, useStaticQuery } from "gatsby"
+
 //import BackgroundImage from "gatsby-background-image"
 import Slider from "react-slick"
 
 import Slide from "./slide"
 
 const MainSlides = props => {
-  const data = useStaticQuery(graphql`
-    {
-      banner1: file(relativePath: { eq: "banner1.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 2000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      banner2: file(relativePath: { eq: "banner2.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 2000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-
-      banner3: file(relativePath: { eq: "banner3.png" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 2000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `)
+ 
+      
   let nudge = props.menuState ? "nudge" : ""
-  const banner1 = data.banner1.childImageSharp.fluid
-  const banner2 = data.banner2.childImageSharp.fluid
-  const banner3 = data.banner3.childImageSharp.fluid
+  
 
   const settings = {
     dots: true,
@@ -57,7 +31,7 @@ const MainSlides = props => {
         <Slide
           banner={1}
           text={
-            <h1 className={`${textSize} uppercase text-white  font-extrabold `}>
+            <h1 className={`${textSize} uppercase text-white  font-extrabold  max-w-max `}>
               Good <br /> coffee <br /> good <br /> morning
             </h1>
           }

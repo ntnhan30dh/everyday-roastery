@@ -1,4 +1,4 @@
-import React, { useState} from "react"
+import React from "react"
 import Header from "../components/header"
 import SoMeBar from "../components/soMeBar"
 import Footer from "../components/footer"
@@ -11,7 +11,7 @@ import 'semantic-ui-css/semantic.min.css';
 // import Plx from "react-plx"
 
 export default function Home() {
-  let [menuActive, setmenuActive] = useState(false);
+  // let [menuActive, setmenuActive] = useState(false);
  
    
    

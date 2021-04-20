@@ -20,6 +20,8 @@ module.exports = {
         black: "#2a2c2a",
         red: "#d71d24",
         yellow: "#ffd250",
+        pink: "#DF1995",
+        blue: " #2CCCD3"
       },
       lineHeight: {
         "extra-loose": "2.5",

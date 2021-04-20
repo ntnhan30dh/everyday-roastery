@@ -141,13 +141,13 @@ const Menu = () => {
             buttonStyle="w-full p-2"
           />
         </Slider>
-        {/* <div className="max-w-max mx-auto my-10">
+        <div className="max-w-max mx-auto my-10">
         <OrderNow display={ 
-          <div className="orderBtn text-white text-sm sm:text-xl p-2 md:p-4 uppercase font-extrabold bg-black  ">
+          <div className="orderBtn text-white text-sm sm:text-xl p-2 md:p-4 uppercase font-extrabold bg-black text-blue ">
           Order Now!
           </div>
         }/>
-        </div> */}
+        </div>
       </div>
     </section>
   )
