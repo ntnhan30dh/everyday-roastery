@@ -39,13 +39,14 @@ const Slide = props => {
     <BackgroundImage
       fluid={props.banner===1?banner1:props.banner===2?banner2:banner3}
       background-size="contain"
-      className="bgContainer h-screen  "
+      className="bgContainer h-screen "
+      backgroundPosition={"top left"}
     >
       <div className="textDiv pt-32 sm:pt-40  pl-20 sm:pl-40  ">
         {props.text}
         <OrderNow
           display={
-            <div className="orderBtn text-white p-4 uppercase text-xl sm:text-2xl font-extrabold bg-black text-blue">
+            <div className="orderBtn text-white p-4 uppercase text-xl sm:text-2xl font-extrabold bg-blue">
               order now! 
             </div>
           }

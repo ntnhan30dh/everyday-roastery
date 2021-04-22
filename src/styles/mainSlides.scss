@@ -8,6 +8,7 @@
       .bgContainer{
         //border: 2px solid pink;
         animation: fadein 2s linear ;
+        //filter: blur(8px);
 
       }
       .textDiv
@@ -61,6 +62,10 @@
   }
 }
 
+.bgContainer {
+  background-position:  left top !important;
+ //background-size: 100% !important;
+}
 
 @keyframes MoveUp {
    0% {

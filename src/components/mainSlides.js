@@ -24,16 +24,17 @@ const MainSlides = props => {
     
   }
 
-  const textSize = "text-5xl sm:text-8xl"
+  const textSize = "text-5xl sm:text-8xl  max-w-max bg-blackk bg-blend-color-dodge "
   return (
     <section className={`mainSlidesContainer bg-black  ${nudge}`}>
       <Slider {...settings} className=" ">
         <Slide
           banner={1}
           text={
-            <h1 className={`${textSize} uppercase text-white  font-extrabold  max-w-max `}>
+            <h1 className={`${textSize} uppercase text-white font-extrabold`}>
               Good <br /> coffee <br /> good <br /> morning
             </h1>
+            
           }
         />
 
