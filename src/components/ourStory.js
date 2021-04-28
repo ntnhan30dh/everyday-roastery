@@ -50,7 +50,7 @@ const OurStory = props => {
           <p className="text-base md:text-2xl">
             Great coffee that is our source of energy. However you coffee,{" "}
             <b>Everyday</b> baristas know how to brew; from iced vanilla
-            frappuccino to double shot espresso. Delivered in no time,{" "}
+            frappes to double shot espresso. Delivered in no time,{" "}
             <b>Everyday coffee</b> arrives hot (or ice cold), brewed for you.
           </p>
         </div>
