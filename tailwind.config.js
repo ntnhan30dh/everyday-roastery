@@ -9,6 +9,9 @@ module.exports = {
       ...defaultTheme.screens,
     },
     borderWidth: {
+      2: "2px",
+      4: "4px",
+      6: "6px",
       10: "10px",
       15: "15px",
     },
@@ -17,11 +20,11 @@ module.exports = {
       screens: {},
       colors: {
         green: "#0b9446",
-        black: "#2a2c2a",
+       // black: "#2a2c2a",
         red: "#d71d24",
         yellow: "#ffd250",
         pink: "#DF1995",
-        blue: " #2CCCD3"
+        blue: " #27C5CD"
       },
       lineHeight: {
         "extra-loose": "2.5",
@@ -34,7 +37,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ["responsive", "hover", "focus"],
+    },
   },
   plugins: [],
 }

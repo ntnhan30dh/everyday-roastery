@@ -13,15 +13,19 @@ $primary-pink:  #DF1995;
 @import "footer";
 //@import "contact";
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://use.typekit.net/fai4dzl.css");
 html, body {
     // overflow-x: hidden;
     // background-color: aqua;
     margin: 0;
     scroll-behavior: smooth;
-    font-family: 'Nunito Sans', sans-serif;
+    // font-family: 'Nunito Sans', sans-serif;
+  font-family: azo-sans-web, sans-serif !important;
+
   }
   h1, h2, h3, h4, h5, p, button, input, optgroup, select, textarea{
-    font-family: 'Nunito Sans', sans-serif !important;
+    // font-family: 'Nunito Sans', sans-serif !important;
+  font-family: azo-sans-web, sans-serif !important;
   }
 *{
 	box-sizing: border-box;
@@ -50,3 +54,15 @@ html, body {
   
 }
 
+// dropdown country 
+
+.ui.selection.dropdown {
+  background:black !important ;
+}
+
+.ui.dropdown>.text {
+  color: white !important;
+}
+ .ui.selection.dropdown>.dropdown.icon{
+color: white;
+}

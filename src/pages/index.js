@@ -1,10 +1,9 @@
 import React, { useState} from "react"
-import Header from "../components/header"
-import SoMeBar from "../components/soMeBar"
-import MainSlides from "../components/mainSlides"
-import Menu from "../components/menu"
-import Followus from "../components/followus"
-import Footer from "../components/footer"
+import Header2 from "../components/header2"
+// import MainSlides from "../components/mainSlides"
+// import Menu from "../components/menu"
+// import Followus from "../components/followus"
+// import Footer from "../components/footer"
 // import OrderNow from "../components/ordernow"
 import "../styles/index.scss"
 import "slick-carousel/slick/slick.css"; 
@@ -45,12 +44,12 @@ export default function Home() {
       <head>
       <title>Everyday Roastery</title>
       </head>
-     < SoMeBar/>
-    <Header />
-    <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/>
-    <Menu/>
+     {/* < SoMeBar/> */}
+    <Header2 />
+    {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
+    {/* <Menu/>
     <Followus/>
-    <Footer/>
+    <Footer/> */}
     </div>
   )
 }
