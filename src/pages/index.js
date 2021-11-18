@@ -1,15 +1,17 @@
 import React, { useState, useEffect} from "react"
+import "../styles/index.scss"
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import 'semantic-ui-css/semantic.min.css';
+
 import Header2 from "../components/header2"
 import Banner from "../components/banner"
+import Menu2 from "../components/menu2"
 // import MainSlides from "../components/mainSlides"
 // import Menu from "../components/menu"
 // import Followus from "../components/followus"
 // import Footer from "../components/footer"
 // import OrderNow from "../components/ordernow"
-import "../styles/index.scss"
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import 'semantic-ui-css/semantic.min.css';
 // import Plx from "react-plx"
 
 export default function Home() {
@@ -59,6 +61,7 @@ export default function Home() {
     // ];
 
     const text= {
+      h1 : 'text-8xl',
       h2 : 'text-7xl'
     }
     
@@ -70,6 +73,7 @@ export default function Home() {
      {/* < SoMeBar/> */}
     <Header2 country={country} handleCountryUpdate={()=>handleCountryUpdate()} />
     <Banner textStyle = {text} />
+     <Menu2 textStyle = {text}/>
     {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
     {/* <Menu/>
     <Followus/>

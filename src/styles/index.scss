@@ -76,3 +76,14 @@ color: white;
     }
   }
 }
+
+// menu
+.menuContainer{
+  h1:hover{
+    background-clip: text !important;
+    background: url(../images/pattern.png)  ;
+    background-size: contain;
+    -webkit-text-fill-color: transparent;
+    background-color: #fff;
+  }
+}

@@ -20,9 +20,9 @@ const Banner = (props) => {
     }
   `)
   return (
-    <section className="banner">
+    <section className="banner mb-52 ">
       <div className="text text-center uppercase py-32">
-        <h2 className={`${props.textStyle.h2}`}> Your Everyday COFFEE <br />  <span className=" "> a tap away </span> </h2>
+        <h2 className={`${props.textStyle.h2} font-black`}> Your Everyday COFFEE <br />  <span className=" "> a tap away </span> </h2>
         <OrderNow
             display={
               <div className="orderBtn  text-white text-base md:text-base rounded-full py-6 px-8  uppercase font-bold bg-blue  ">
