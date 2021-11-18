@@ -6,9 +6,9 @@ import logo from "../images/logo2.png"
 import OrderNow from "./ordernow"
 import { Link } from "gatsby"
 
-const Header2 = () => {
+const Header2 = (props) => {
   const countryList = new CountryList2()
-  let [country, setCountry] = useState("Singapore")
+ // let [country, setCountry] = useState("Singapore")
 
   const link =
     "text-sm md:text-base uppercase font-bold text-white  opacity-40 hover:opacity-100 hover:text-white   hover: border-b-2 border-black hover:border-white"
@@ -44,17 +44,20 @@ const Header2 = () => {
             </li>
 
           </ul>
-          <div className="countryDropdown text-sm md:text-base uppercase font-bold text-red bg-black ">
+          <div className="countryDropdown relative text-sm md:text-base uppercase font-bold text-red bg-black /p-2 ">
           <Dropdown
+          className="z-10  "
            fluid
-            placeholder={country}
+            placeholder={props.country}
             search
             selection
             options={countryList.countries()}
-            onChange={(e, { value }) => setCountry(value)}
-            defaultValue={country}
-            value={country}
+            onChange={(e, { value }) => props.handleCountryUpdate(value)}
+            defaultValue={props.country}
+            value={props.country}
           />
+
+          <div className="absolute bottom-2 left-0 w-full h-1/2 border-b-2 border-l-2 border-r-2 border-white z-0 "></div>
           </div>
           <OrderNow
             display={

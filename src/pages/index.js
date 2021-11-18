@@ -1,5 +1,6 @@
-import React, { useState} from "react"
+import React, { useState, useEffect} from "react"
 import Header2 from "../components/header2"
+import Banner from "../components/banner"
 // import MainSlides from "../components/mainSlides"
 // import Menu from "../components/menu"
 // import Followus from "../components/followus"
@@ -12,16 +13,34 @@ import 'semantic-ui-css/semantic.min.css';
 // import Plx from "react-plx"
 
 export default function Home() {
-  let [menuActive, setmenuActive] = useState(false);
+  //let [menuActive, setmenuActive] = useState(false);
   // let [vh, setVh] = useState(0);
 
-  const toggleMenu = () => {
-		setmenuActive(!menuActive)
-    }
+  let [country, setCountry] = useState("")
+
+  const handleCountryUpdate = (c) =>(
+    setCountry(c)
+  )
+
+  // const toggleMenu = () => {
+	// 	setmenuActive(!menuActive)
+  //   }
    
     // useEffect(() => {
     //   setVh( window.innerHeight -170)
     // }, [])
+
+    useEffect(() => {
+      fetch('https://ipapi.co/json/')
+      .then( res => res.json())
+      .then(response => {
+        setCountry(response.country)
+          console.log("Country: ", response.country);
+       })
+       .catch((data, status) => {
+          console.log('Request failed');
+       })
+    }, [])
 
     // const parallaxMoveDown = [
     //   {
@@ -38,6 +57,10 @@ export default function Home() {
     //     ],
     //   },
     // ];
+
+    const text= {
+      h2 : 'text-7xl'
+    }
     
   return (
     <div className="pageWrapper ">
@@ -45,7 +68,8 @@ export default function Home() {
       <title>Everyday Roastery</title>
       </head>
      {/* < SoMeBar/> */}
-    <Header2 />
+    <Header2 country={country} handleCountryUpdate={()=>handleCountryUpdate()} />
+    <Banner textStyle = {text} />
     {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
     {/* <Menu/>
     <Followus/>

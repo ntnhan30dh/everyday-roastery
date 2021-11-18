@@ -99,13 +99,16 @@ class CountryList2 {
        
        
         let names =      [
-              "Argentina",
-              "Bolivia",
-              "Chile",
-              "Panama",
-              "Paraguay",
-              "Uruguay",
-              "Venezuela",
+              "saudi arabia",
+              "Singapore",
+              "Bahrain",
+              "Kuwait",
+              "Malaysia",
+              "Hungary",
+              "Germany",
+              "UAE",
+              "Qatar",
+              "Turkey",
             ];
         let res = [];
         names.map((name) =>

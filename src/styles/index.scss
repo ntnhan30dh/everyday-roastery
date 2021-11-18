@@ -57,7 +57,7 @@ html, body {
 // dropdown country 
 
 .ui.selection.dropdown {
-  background:black !important ;
+  background:transparent!important ;
 }
 
 .ui.dropdown>.text {
@@ -65,4 +65,14 @@ html, body {
 }
  .ui.selection.dropdown>.dropdown.icon{
 color: white;
+}
+
+// banner
+.banner{
+  .text {
+    span {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+    }
+  }
 }
