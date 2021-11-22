@@ -34,6 +34,10 @@ module.exports = {
         '30': '30%',
        
       },
+     
+    },
+    opacity: {
+      '15': '.15',
     },
   },
   variants: {
@@ -41,5 +45,6 @@ module.exports = {
       display: ["responsive", "hover", "focus"],
     },
   },
+ 
   plugins: [],
 }

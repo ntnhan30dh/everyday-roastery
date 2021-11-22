@@ -11,7 +11,7 @@ const Header2 = (props) => {
  // let [country, setCountry] = useState("Singapore")
 
   const link =
-    "text-sm md:text-base uppercase font-bold text-white  opacity-40 hover:opacity-100 hover:text-white   hover: border-b-2 border-black hover:border-white"
+    "text-sm md:text-base uppercase font-bold text-white  opacity-40 hover:opacity-100 hover:text-white   hover:border-b-2 border-black hover:border-white"
   return (
     <header className={`headerWrapper z-50 w-full  px-2 md:px-10 bg-black`}>
       <nav className="nav relative flex justify-end items-center w-full py-4">

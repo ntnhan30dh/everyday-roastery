@@ -87,3 +87,8 @@ color: white;
     background-color: #fff;
   }
 }
+
+// button
+button:focus {
+  outline: none;
+}
