@@ -86,6 +86,20 @@ color: white;
     -webkit-text-fill-color: transparent;
     background-color: #fff;
   }
+
+  .menuSlides{
+    .menuItem1Wrap{
+      .imgContainer{
+        &:hover{
+         //transform: scale(0.75, 0.75);
+          .imgWrap{
+           //transform: scale(1.6, 1.6);
+        }
+
+        }
+      }
+    }
+  }
 }
 
 // button

@@ -39,10 +39,18 @@ module.exports = {
     opacity: {
       '15': '.15',
     },
+    scale: {
+      ...defaultTheme.scale,
+     '160': '1.6',
+     '170': '1.7',
+     '180': '1.8',
+     '200': '2',
+    }
   },
   variants: {
     extend: {
-      display: ["responsive", "hover", "focus"],
+      display: ["responsive", "hover", "focus", ],
+      margin: ['hover'],
     },
   },
  

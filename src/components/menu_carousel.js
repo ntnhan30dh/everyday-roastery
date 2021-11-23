@@ -2,6 +2,7 @@ import React from "react"
 import Slider from "react-slick"
 
 import MenuItem1 from "./menuItem1"
+import MenuItem2 from "./menuItem2"
 
 const Carousel = props => {
   const settings = {
@@ -10,7 +11,7 @@ const Carousel = props => {
     speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     responsive: [
       {
@@ -40,35 +41,17 @@ const Carousel = props => {
     ],
   }
 
-  const menuType = type => {
-    let res = []
-    switch (type) {
-      case "Hot Coffees":
-        res = ["Spanish Latte", "Latte", "Americano", "Flat White"]
-        break
-      case "Cold Coffees":
-        res = [
-          "Iced Latte",
-          "Iced Vegan Latte",
-          "Iced Spanish Latte",
-          "Iced Caramel Spanish Latte",
-          "Iced Macchiato",
-          "Iced Caramel Latte",
-        ]
-        break
-      default:
-        res = []
-    }
-
-    return res
+  const menuType =  {
+    "Hot Coffees":["Spanish Latte", "Latte", "Americano", "Flat White"],
+    "tarot":["Sharing", "Treat", "Focus", "Habit", "Break", "Energy"],
   }
-  const itemList = menuType(props.type)
+  const itemList = menuType[props.type]
   return (
     <div className="menuSlides ">
       <Slider {...settings} className="">
        {itemList.map(i=>{
            return (
-            <MenuItem1 name={i}/>
+            props.type==="tarot" ?<MenuItem2 name={i}/>: <MenuItem1 name={i}/>
            )
        })}
       </Slider>

@@ -115,6 +115,7 @@ const Menu2 = props => {
         {menuTypeItem("Hot Drinks")}
       </ul>
       <Carousel type={menuType}/>
+      <Carousel type="tarot"/>
     </section>
   )
 }
