@@ -1,12 +1,13 @@
-import React, { useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import "../styles/index.scss"
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
-import 'semantic-ui-css/semantic.min.css';
+import "slick-carousel/slick/slick.css"
+import "slick-carousel/slick/slick-theme.css"
+import "semantic-ui-css/semantic.min.css"
 
 import Header2 from "../components/header2"
 import Banner from "../components/banner"
 import Menu2 from "../components/menu2"
+import BehindTheBeans from "../components/behindTheBeans"
 // import MainSlides from "../components/mainSlides"
 // import Menu from "../components/menu"
 // import Followus from "../components/followus"
@@ -20,62 +21,65 @@ export default function Home() {
 
   let [country, setCountry] = useState("")
 
-  const handleCountryUpdate = (c) =>(
-    setCountry(c)
-  )
+  const handleCountryUpdate = c => setCountry(c)
 
   // const toggleMenu = () => {
-	// 	setmenuActive(!menuActive)
+  // 	setmenuActive(!menuActive)
   //   }
-   
-    // useEffect(() => {
-    //   setVh( window.innerHeight -170)
-    // }, [])
 
-    useEffect(() => {
-      fetch('https://ipapi.co/json/')
-      .then( res => res.json())
+  // useEffect(() => {
+  //   setVh( window.innerHeight -170)
+  // }, [])
+
+  useEffect(() => {
+    fetch("https://ipapi.co/json/")
+      .then(res => res.json())
       .then(response => {
         setCountry(response.country)
-          console.log("Country: ", response.country);
-       })
-       .catch((data, status) => {
-          console.log('Request failed');
-       })
-    }, [])
+        console.log("Country: ", response.country)
+      })
+      .catch((data, status) => {
+        console.log("Request failed")
+      })
+  }, [])
 
-    // const parallaxMoveDown = [
-    //   {
-    //     start:'self',
-    //     duration: 3000,
-    //     properties: [
-    //       {
-    //         startValue: 0,
-    //         endValue: vh,
-    //         endOffset: "100vh",
-    //         property: "translateY"
-          
-    //       },
-    //     ],
-    //   },
-    // ];
+  // const parallaxMoveDown = [
+  //   {
+  //     start:'self',
+  //     duration: 3000,
+  //     properties: [
+  //       {
+  //         startValue: 0,
+  //         endValue: vh,
+  //         endOffset: "100vh",
+  //         property: "translateY"
 
-    const text= {
-      h1 : 'text-8xl',
-      h2 : 'text-7xl'
-    }
-    
+  //       },
+  //     ],
+  //   },
+  // ];
+
+  const text = {
+    h1: "text-8xl uppercase",
+    h2: "text-7xl uppercase",
+    p: "text-xl",
+  }
+
   return (
     <div className="pageWrapper ">
       <head>
-      <title>Everyday Roastery</title>
+        <title>Everyday Roastery</title>
       </head>
-     {/* < SoMeBar/> */}
-    <Header2 country={country} handleCountryUpdate={()=>handleCountryUpdate()} />
-    <Banner textStyle = {text} />
-     <Menu2 textStyle = {text}/>
-    {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
-    {/* <Menu/>
+      {/* < SoMeBar/> */}
+      <Header2
+        country={country}
+        handleCountryUpdate={() => handleCountryUpdate()}
+      />
+      {/* <Banner textStyle={text} />
+      <Menu2 textStyle={text} /> */}
+      <BehindTheBeans textStyle={text} />
+      {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
+      {/* <Menu/>
     <Followus/>
     <Footer/> */}
     </div>

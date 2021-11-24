@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
-import Carousel from '../components/menu_carousel'
+import Carousel from "../components/menu_carousel"
 
 const Menu2 = props => {
   let [menuType, setMenuType] = useState("Hot Coffees")
@@ -10,7 +10,9 @@ const Menu2 = props => {
     return (
       <button
         className={`max-w-max text-4xl font-black ${
-          type === menuType ? "opacity-100 border-b-2 border-black" : "opacity-15"
+          type === menuType
+            ? "opacity-100 border-b-2 border-black"
+            : "opacity-15"
         }`}
         onClick={() => {
           setMenuType(type)
@@ -114,8 +116,18 @@ const Menu2 = props => {
         {menuTypeItem("Cold Drinks")}
         {menuTypeItem("Hot Drinks")}
       </ul>
-      <Carousel type={menuType}/>
-      <Carousel type="tarot"/>
+      <Carousel type={menuType} />
+      <div className="text w-2/3 mx-auto text-center  ">
+        <h2 className={`${props.textStyle.h2} text-center `}>
+          {" "}
+          Don’t know what to choose?
+        </h2>
+        <p className={`${props.textStyle.p} text-center w-1/2 mx-auto `}>
+          Select one of the cards below and let us find the coffee that will
+          best suit your mood!
+        </p>
+      </div>
+      <Carousel type="tarot" />
     </section>
   )
 }
