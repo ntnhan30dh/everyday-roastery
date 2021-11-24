@@ -20,7 +20,7 @@ const Banner = (props) => {
     }
   `)
   return (
-    <section className="banner mb-52 ">
+    <section className="banner mb-52 " id="banner">
       <div className="text text-center uppercase py-32">
         <h2 className={`${props.textStyle.h2} font-black`}> Your Everyday COFFEE <br />  <span className=" "> a tap away </span> </h2>
         <OrderNow
