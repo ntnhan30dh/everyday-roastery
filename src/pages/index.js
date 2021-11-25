@@ -8,6 +8,7 @@ import Header2 from "../components/header2"
 import Banner from "../components/banner"
 import Menu2 from "../components/menu2"
 import BehindTheBeans from "../components/behindTheBeans"
+import HowToOrder from "../components/howToOrder"
 // import MainSlides from "../components/mainSlides"
 // import Menu from "../components/menu"
 // import Followus from "../components/followus"
@@ -77,7 +78,9 @@ export default function Home() {
       />
       {/* <Banner textStyle={text} />
       <Menu2 textStyle={text} /> */}
-      <BehindTheBeans textStyle={text} />
+      {/* <BehindTheBeans textStyle={text} /> */}
+      <HowToOrder textStyle={text} />
+      
       {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
       {/* <Menu/>
     <Followus/>
