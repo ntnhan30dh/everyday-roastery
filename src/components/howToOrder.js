@@ -34,10 +34,7 @@ const HowToOrder = props => {
 
   return (
     <section id="howToOrder" className="howToOrder">
-      <h1 className={`${props.textStyle.h2} font-black  text-center`}>
-        {" "}
-        HOW TO ORDER{" "}
-      </h1>
+     
       <div className="cards">
         {card("step1")}
         {card("step2")}
