@@ -84,6 +84,7 @@ module.exports = {
     extend: {
       display: ["responsive", "hover", "focus", ],
       margin: ['hover'],
+      translate: ['group-hover'],
     },
   },
  
