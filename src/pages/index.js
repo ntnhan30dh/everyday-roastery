@@ -66,7 +66,7 @@ export default function Home() {
 
   const text = {
     h1: "text-8xl uppercase",
-    h2: "text-7xl uppercase",
+    h2: "text-4xl xsm:text-5xl md:text-7xl uppercase leading-normal	",
     h3: "text-5xl uppercase",
     p: "text-xl",
   }
@@ -77,18 +77,18 @@ export default function Home() {
         <title>Everyday Roastery</title>
       </head>
       {/* < SoMeBar/> */}
-      <Header2
+      {/* <Header2
         country={country}
         handleCountryUpdate={() => handleCountryUpdate()}
-      />
-      {/* <Banner textStyle={text} /> */}
+      /> */}
+      <Banner textStyle={text} />
       {/* <Menu2 textStyle={text} /> */}
       {/* <BehindTheBeans textStyle={text} /> */}
       {/* <HowToOrder textStyle={text} /> */}
       {/* <DownloadApp textStyle={text} /> */}
       {/* <News textStyle={text} /> */}
       {/* <IG textStyle={text} /> */}
-      <Footer2 textStyle={text}/>
+      {/* <Footer2 textStyle={text}/> */}
       
       {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
       {/* <Menu/>
