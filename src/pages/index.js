@@ -11,6 +11,7 @@ import BehindTheBeans from "../components/behindTheBeans"
 import HowToOrder from "../components/howToOrder"
 import DownloadApp from "../components/downloadApp"
 import News from "../components/news"
+import IG from "../components/ig"
 // import MainSlides from "../components/mainSlides"
 // import Menu from "../components/menu"
 // import Followus from "../components/followus"
@@ -78,12 +79,13 @@ export default function Home() {
         country={country}
         handleCountryUpdate={() => handleCountryUpdate()}
       />
-      {/* <Banner textStyle={text} />
-      <Menu2 textStyle={text} /> */}
+      {/* <Banner textStyle={text} /> */}
+      <Menu2 textStyle={text} />
       {/* <BehindTheBeans textStyle={text} /> */}
       {/* <HowToOrder textStyle={text} /> */}
       {/* <DownloadApp textStyle={text} /> */}
-      <News textStyle={text} />
+      {/* <News textStyle={text} /> */}
+      <IG textStyle={text} />
       
       {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
       {/* <Menu/>

@@ -8,11 +8,12 @@ const Carousel = props => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 1000,
+    speed: 3000,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 3000,
+    //cssEase: "linear",
     responsive: [
       {
         breakpoint: 1024,
