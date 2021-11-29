@@ -65,7 +65,7 @@ export default function Home() {
   // ];
 
   const text = {
-    h1: "text-8xl uppercase",
+    h1: "text-5xl md:text-8xl uppercase",
     h2: "text-4xl xsm:text-5xl md:text-7xl uppercase leading-normal	",
     h3: "text-5xl uppercase",
     p: "text-xl",
@@ -82,7 +82,7 @@ export default function Home() {
         handleCountryUpdate={() => handleCountryUpdate()}
       /> */}
       <Banner textStyle={text} />
-      {/* <Menu2 textStyle={text} /> */}
+      <Menu2 textStyle={text} />
       {/* <BehindTheBeans textStyle={text} /> */}
       {/* <HowToOrder textStyle={text} /> */}
       {/* <DownloadApp textStyle={text} /> */}

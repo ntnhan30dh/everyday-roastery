@@ -9,7 +9,7 @@ const Menu2 = props => {
   const menuTypeItem = type => {
     return (
       <button
-        className={`max-w-max text-4xl font-black ${
+        className={`max-w-max text-base md:text-4xl font-black uppercase mx-4 my-2 ${
           type === menuType
             ? "opacity-100 border-b-2 border-black"
             : "opacity-15"
@@ -103,13 +103,13 @@ const Menu2 = props => {
   }
 
   return (
-    <section className="menuContainer " id="menu">
+    <section className="menuContainer mt-20 " id="menu">
       <h1
         className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto`}
       >
         OUR MENU
       </h1>
-      <ul className="flex justify-around">
+      <ul className="flex justify-center  md:justify-around flex-wrap md:my-10">
         {menuTypeItem("Hot Coffees")}
         {menuTypeItem("Cold Coffees")}
         {menuTypeItem("Frappes")}

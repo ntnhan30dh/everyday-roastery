@@ -25,7 +25,7 @@ const Banner = props => {
     }
   `)
   return (
-    <section className="banner mb-52 " id="banner">
+    <section className="banner  " id="banner">
       <div className="text text-center uppercase my-20  md:mt-32 ">
         <h2 className={`${props.textStyle.h2} font-black mb-0 xxsm:px-4  `}>
           {" "}
@@ -47,7 +47,7 @@ const Banner = props => {
       <Img fluid={data.banner.childImageSharp.fluid} className="banner " className="hidden md:block"/>
       <Img fluid={data.banner_m.childImageSharp.fluid} className="banner mobile" className=" md:hidden"/>
    
-            <div className="  md:hidden orderBtn  text-center  text-white text-base md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-4">
+            <div className="  md:hidden orderBtn  text-center  text-white text-base md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-10">
               Order Now
             </div>
          
