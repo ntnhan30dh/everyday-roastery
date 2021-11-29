@@ -65,9 +65,11 @@ export default function Home() {
   // ];
 
   const text = {
-    h1: "text-5xl md:text-8xl uppercase",
+    h1: "text-5xl md:text-8xl uppercase", 
+    h1_1: "text-4xl xsm:text-5xl md:text-8xl uppercase", 
     h2: "text-4xl xsm:text-5xl md:text-7xl uppercase leading-normal	",
-    h3: "text-5xl uppercase",
+    h2_1: "text-xl md:text-7xl uppercase leading-normal	md:py-10",
+    h3: "text-xl md:text-5xl uppercase",
     p: "text-base md:text-xl",
   }
 
@@ -81,9 +83,9 @@ export default function Home() {
         country={country}
         handleCountryUpdate={() => handleCountryUpdate()}
       /> */}
-      <Banner textStyle={text} />
+      {/* <Banner textStyle={text} /> */}
       <Menu2 textStyle={text} />
-      {/* <BehindTheBeans textStyle={text} /> */}
+      <BehindTheBeans textStyle={text} />
       {/* <HowToOrder textStyle={text} /> */}
       {/* <DownloadApp textStyle={text} /> */}
       {/* <News textStyle={text} /> */}
