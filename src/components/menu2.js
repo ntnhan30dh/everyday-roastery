@@ -117,13 +117,13 @@ const Menu2 = props => {
         {menuTypeItem("Hot Drinks")}
       </ul>
       <Carousel type={menuType} />
-      <div className="text w-2/3 mx-auto text-center  ">
-        <h2 className={`${props.textStyle.h2} text-center `}>
+      <div className="text  mx-auto text-center md:my-20 ">
+        <h2 className={`${props.textStyle.h2} text-center font-black`}>
           {" "}
-          Don’t know what to choose?
+          Don’t know what <br /> to choose?
         </h2>
-        <p className={`${props.textStyle.p} text-center w-1/2 mx-auto `}>
-          Select one of the cards below and let us find the coffee that will
+        <p className={`${props.textStyle.p} text-center  mx-auto md:my-10 `}>
+          Select one of the cards below and let us find <br /> the coffee that will
           best suit your mood!
         </p>
       </div>

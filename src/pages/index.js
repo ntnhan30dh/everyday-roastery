@@ -68,7 +68,7 @@ export default function Home() {
     h1: "text-5xl md:text-8xl uppercase",
     h2: "text-4xl xsm:text-5xl md:text-7xl uppercase leading-normal	",
     h3: "text-5xl uppercase",
-    p: "text-xl",
+    p: "text-base md:text-xl",
   }
 
   return (
