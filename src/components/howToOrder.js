@@ -24,8 +24,10 @@ const HowToOrder = props => {
 
   const card = step => {
     return (
-      <div >
+      <div  className="my-14 lg:w-1/3 mx-12">
+      <div className="lg:w-2/3">
         <img src={pics[step]} alt="" />
+      </div>
         <h3 className={`uppercase ${props.textStyle.h3} font-black`}>{headers[step]} </h3>
         <p className={`${props.textStyle.p} `}> {texts[step]}</p>
       </div>
@@ -33,9 +35,13 @@ const HowToOrder = props => {
   }
 
   return (
-    <section id="howToOrder" className="howToOrder">
-     
-      <div className="cards">
+    <section id="howToOrder" className="howToOrder ">
+    <h1
+        className={`${props.textStyle.h1} font-black text-center mx-auto pt-20 lg:pt-28`}
+      >
+      HOW TO ORDER
+      </h1>
+      <div className="cards mx-auto text-center lg:text-left w-2/3 sm:w-1/2 md:w-1/3 lg:w-full lg:flex justify-between">
         {card("step1")}
         {card("step2")}
         {card("step3")}

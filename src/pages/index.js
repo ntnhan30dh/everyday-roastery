@@ -84,9 +84,9 @@ export default function Home() {
         handleCountryUpdate={() => handleCountryUpdate()}
       /> */}
       {/* <Banner textStyle={text} /> */}
-      <Menu2 textStyle={text} />
+      {/* <Menu2 textStyle={text} /> */}
       <BehindTheBeans textStyle={text} />
-      {/* <HowToOrder textStyle={text} /> */}
+      <HowToOrder textStyle={text} />
       {/* <DownloadApp textStyle={text} /> */}
       {/* <News textStyle={text} /> */}
       {/* <IG textStyle={text} /> */}
