@@ -97,7 +97,7 @@ const BehindTheBeans = props => {
   const textDiv = 'w-3/4 md:w-2/3 lg:w-1/2'
   const p = 'md:w-2/3'
   return (
-    <section id="behindTheBeans " className="mx-4 md:mx-1/10 lg:mx-1/20">
+    <section id="behindTheBeans" className="mx-4 md:mx-1/10 lg:mx-1/20">
       <h1
         className={`${props.textStyle.h1_1} font-black text-center max-w-max mx-auto mx-2 py-10 md:py-20 lg:py-24`}
       >

@@ -41,7 +41,7 @@ const DownLoadApp = props => {
   ];
 
   return (
-    <section className="downloadApp relative overflow-x-hidden lg:mt-44">
+    <section className="downloadApp relative overflow-x-hidden md:overflow-x-visible lg:mt-44">
       <div className="w-full">
         <img src={BG} alt="background" className="hidden md:block" />
         <img src={BG_mobile} alt="background" className=" md:hidden" />
@@ -88,7 +88,7 @@ const DownLoadApp = props => {
                 </div>
               </div>
           <Plx
-              parallaxData={parallaxRotate} className="stamp ">
+              parallaxData={parallaxRotate} className="stamp z-20">
             <img src={Stamp} alt="" />
           </Plx>
             </div>

@@ -40,8 +40,8 @@ export default function Home() {
     fetch("https://ipapi.co/json/")
       .then(res => res.json())
       .then(response => {
-        setCountry(response.country)
-        console.log("Country: ", response.country)
+        setCountry(response.country_name)
+        //console.log("Country: ", response)
       })
       .catch((data, status) => {
         console.log("Request failed")
@@ -79,18 +79,18 @@ export default function Home() {
         <title>Everyday Roastery</title>
       </head>
       {/* < SoMeBar/> */}
-      {/* <Header2
+      <Header2
         country={country}
         handleCountryUpdate={() => handleCountryUpdate()}
-      /> */}
-      {/* <Banner textStyle={text} /> */}
-      {/* <Menu2 textStyle={text} /> */}
-      {/* <BehindTheBeans textStyle={text} /> */}
-      {/* <HowToOrder textStyle={text} /> */}
-      {/* <DownloadApp textStyle={text} /> */}
+      />
+      <Banner textStyle={text} />
+      <Menu2 textStyle={text} />
+      <BehindTheBeans textStyle={text} />
+      <HowToOrder textStyle={text} />
+      <DownloadApp textStyle={text} />
       <News textStyle={text} />
       <IG textStyle={text} />
-      {/* <Footer2 textStyle={text}/> */}
+      <Footer2 textStyle={text}/>
       
       {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
       {/* <Menu/>
