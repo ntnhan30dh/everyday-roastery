@@ -91,6 +91,7 @@ module.exports = {
      
     },
     opacity: {
+      ...defaultTheme.opacity,
       '15': '.15',
     },
     scale: {
