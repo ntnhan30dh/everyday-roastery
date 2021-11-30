@@ -44,6 +44,7 @@ const News = props => {
           slidesToShow: 1.1,
           slidesToScroll: 1,
           infinite: false,
+          arrows: false,
         },
       },
     ],
@@ -98,7 +99,7 @@ const News = props => {
   return (
     <section className="news" id="news">
       <h1
-        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto md:py-24`}
+        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto md:pt-24 md:pb-10`}
       >
         news
       </h1>

@@ -87,9 +87,9 @@ export default function Home() {
       {/* <Menu2 textStyle={text} /> */}
       {/* <BehindTheBeans textStyle={text} /> */}
       {/* <HowToOrder textStyle={text} /> */}
-      <DownloadApp textStyle={text} />
+      {/* <DownloadApp textStyle={text} /> */}
       <News textStyle={text} />
-      {/* <IG textStyle={text} /> */}
+      <IG textStyle={text} />
       {/* <Footer2 textStyle={text}/> */}
       
       {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}

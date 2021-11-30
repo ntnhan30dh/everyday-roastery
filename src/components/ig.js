@@ -22,7 +22,7 @@ const IG = props => {
         dots: false,
         infinite: true,
         speed: 5000,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 5000,
@@ -34,7 +34,7 @@ const IG = props => {
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              dots: true,
+             
             },
           },
           {
@@ -48,17 +48,19 @@ const IG = props => {
           {
             breakpoint: 480,
             settings: {
-              slidesToShow: 1,
+              slidesToShow: 1.3,
               slidesToScroll: 1,
+              infinite: false,
+              arrows: false,
             },
           },
         ],
       }
 
   return (
-    <section className="ig" id="ig">
+    <section className="ig mt-10 md:mt-28" id="ig">
       <h1
-        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto`}
+        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto py-10 ` }
       >
         Follow us on instagram
       </h1>
