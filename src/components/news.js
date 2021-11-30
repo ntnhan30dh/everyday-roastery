@@ -1,4 +1,5 @@
 import React from "react"
+import Slider from "react-slick"
 
 import News1 from "../images/news/news1.png"
 import News2 from "../images/news/news2.png"
@@ -10,6 +11,44 @@ import News3_bg from "../images/news/news3_bg.png"
 import News4_bg from "../images/news/news4_bg.png"
 
 const News = props => {
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 3000,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    //cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: false,
+        },
+      },
+      // {
+      //   breakpoint: 600,
+      //   settings: {
+      //     slidesToShow: 2,
+      //     slidesToScroll: 2,
+      //     initialSlide: 2,
+      //   },
+      // },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.1,
+          slidesToScroll: 1,
+          infinite: false,
+        },
+      },
+    ],
+  }
+
     const pics = {
         'news1': News1,
         'news2': News2,
@@ -40,7 +79,7 @@ const News = props => {
 
       const card = news => {
         return (
-          <div className="w-1/5" >
+          <div className=" px-2 md:px-4" >
           <div className="imgWrap relative group">
               <div className="absolute top-0 transform duration-200 group-hover:-translate-y-3 group-hover:-translate-x-3 z-20">
             <img src={pics[news]} alt="" />
@@ -49,7 +88,7 @@ const News = props => {
             <img src={bg[news]} alt="" />
               </div>
           </div>
-            <h4 className='uppercase text-3xl font-black'>{headers[news]} </h4>
+            <h4 className='uppercase md:text-3xl font-black leading-tight'>{headers[news]} </h4>
             <p className={`${props.textStyle.p} `}> {texts[news]}</p>
           </div>
         )
@@ -59,17 +98,17 @@ const News = props => {
   return (
     <section className="news" id="news">
       <h1
-        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto`}
+        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto md:py-24`}
       >
         news
       </h1>
 
-      <div className="cards">
+      <Slider {...settings} className="cards  lg:hidden ">
         {card("news1")}
         {card("news2")}
         {card("news3")}
         {card("news4")}
-      </div>
+      </Slider>
     </section>
   )
 }

@@ -41,7 +41,7 @@ const DownLoadApp = props => {
   ];
 
   return (
-    <section className="downloadApp relative overflowx-hidden lg:mt-44">
+    <section className="downloadApp relative overflow-x-hidden lg:mt-44">
       <div className="w-full">
         <img src={BG} alt="background" className="hidden md:block" />
         <img src={BG_mobile} alt="background" className=" md:hidden" />

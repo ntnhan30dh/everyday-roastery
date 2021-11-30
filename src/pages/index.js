@@ -79,16 +79,16 @@ export default function Home() {
         <title>Everyday Roastery</title>
       </head>
       {/* < SoMeBar/> */}
-      <Header2
+      {/* <Header2
         country={country}
         handleCountryUpdate={() => handleCountryUpdate()}
-      />
-      <Banner textStyle={text} />
+      /> */}
+      {/* <Banner textStyle={text} /> */}
       {/* <Menu2 textStyle={text} /> */}
       {/* <BehindTheBeans textStyle={text} /> */}
-      <HowToOrder textStyle={text} />
+      {/* <HowToOrder textStyle={text} /> */}
       <DownloadApp textStyle={text} />
-      {/* <News textStyle={text} /> */}
+      <News textStyle={text} />
       {/* <IG textStyle={text} /> */}
       {/* <Footer2 textStyle={text}/> */}
       
