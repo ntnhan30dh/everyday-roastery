@@ -116,7 +116,7 @@ const Menu2 = props => {
         {menuTypeItem("Cold Drinks")}
         {menuTypeItem("Hot Drinks")}
       </ul>
-      <Carousel type={menuType} />
+      <Carousel type={menuType} textStyle={props.textStyle }/>
       <div className="text  mx-auto text-center md:my-20 ">
         <h2 className={`${props.textStyle.h2} text-center font-black`}>
           {" "}

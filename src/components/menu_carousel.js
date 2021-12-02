@@ -58,7 +58,7 @@ const Carousel = props => {
       <Slider {...settings} className="">
        {itemList.map(i=>{
            return (
-            props.type==="tarot" ?<MenuItem2 name={i}/>: <MenuItem1 name={i} position = {itemList.indexOf(i)}/>
+            props.type==="tarot" ?<MenuItem2 name={i}/>: <MenuItem1 name={i} position = {itemList.indexOf(i)} menuType={props.type} textStyle={props.textStyle }/>
            )
        })}
       </Slider>
