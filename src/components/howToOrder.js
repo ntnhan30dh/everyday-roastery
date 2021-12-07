@@ -35,7 +35,8 @@ const HowToOrder = props => {
   }
 
   return (
-    <section id="howToOrder" className="howToOrder ">
+    <section  className="howToOrder ">
+      <span id="howToOrder" className="mt-10"> </span>
     <h1
         className={`${props.textStyle.h1} font-black text-center mx-auto pt-20 lg:pt-28`}
       >

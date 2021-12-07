@@ -26,7 +26,7 @@ const Banner = props => {
   `)
   return (
     <section className="banner  " id="banner">
-      <div className="text text-center uppercase my-20  md:mt-32 ">
+      <div className="text text-center uppercase my-20  md:mt-32 md:mb-0 ">
         <h2 className={`${props.textStyle.h2} font-black mb-0 xxsm:px-4  `}>
           {" "}
           Your Everyday COFFEE <br /> 

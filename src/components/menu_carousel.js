@@ -38,6 +38,7 @@ const Carousel = props => {
           slidesToShow: 2.2,
           slidesToScroll: 1,
           infinite: false,
+          arrows:false
         },
       },
     ],

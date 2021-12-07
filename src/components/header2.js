@@ -22,7 +22,7 @@ const Header2 = (props) => {
           </Link>
         </div>
         <div className="right flex w-full justify-end">
-          <Scrollspy className="flex items-center w-2/3 justify-around" items={ ['menu', 'behindTheBeans', 'howToOrder', 'news'] } currentClassName="border-b-4 border-white">
+          <Scrollspy className="flex items-center w-2/3 justify-around" items={ ['menu', 'behindTheBeans', 'howToOrder', 'news'] } currentClassName="border-b-4 border-white a_opacity-100">
             <li>
               <Link to="#menu" href="menu" className={`${link} `}>
                 <span className="my-auto">Our menu</span>
