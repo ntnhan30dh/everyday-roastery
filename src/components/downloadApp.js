@@ -8,6 +8,7 @@ import iPhone_front from "../images/downloadApp/iPhone_front.png"
 import iPhone_back from "../images/downloadApp/iPhone_back.png"
 import Stamp from "../images/downloadApp/stamp.png"
 import Stamp_logo from "../images/downloadApp/stamp_logo.png"
+import OrderNow from "./ordernow"
 
 const DownLoadApp = props => {
 
@@ -63,9 +64,15 @@ const DownLoadApp = props => {
               DOWNLOAD THE APP HERE!
             </p>
           </div>
-          <div className=" hidden md:block orderBtn  text-white text-base md:text-base rounded-full py-6 px-8  uppercase font-bold bg-blue mt-16  max-w-max mx-auto ">
+          <OrderNow
+        country={props.country}
+          display={
+            <div className=" hidden md:block orderBtn  text-white text-base md:text-base rounded-full py-6 px-8  uppercase font-bold bg-blue mt-16  max-w-max mx-auto ">
               Order Now
             </div>
+          }
+        />
+          
         </div>
         <div className="pic relative md:-mt-1/20 md:w-1/2  ">
           <div className="iphone relative w-3/4 md:w-4/5 sm:w-1/2 mx-auto ">
@@ -95,9 +102,16 @@ const DownLoadApp = props => {
             </div>
           </div>
         </div>
-        <div className=" md:hidden orderBtn  text-center  text-white text-base md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-20">
+
+        <OrderNow
+        country={props.country}
+          display={
+            <div className=" md:hidden orderBtn  text-center  text-white text-base md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-20">
           Order Now
         </div>
+          }
+        />
+        
       </div>
     </section>
   )

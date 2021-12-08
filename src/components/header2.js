@@ -21,9 +21,9 @@ const Header2 = (props) => {
   const link =
     "text-2xl my-10 md:text-sm xl:text-base uppercase font-bold text-white   opacity-40 hover:opacity-100 hover:text-white   hover:border-b-2 border-black hover:border-white "
   return (
-    <header className={`headerWrapper top-0 z-50 w-full  px-2 lg:px-10 bg-black ${props.menuState ? "bg-opacity-60 absolute -top-20 backdrop-filter backdrop-blur-xl	" : "sticky"}`}>
+    <header className={`headerWrapper top-0 z-50 w-full  px-2 lg:px-10 bg-black ${props.menuState ? "bg-opacity-60 md:bg-opacity-100 absolute md:sticky -top-20 md:top-0 backdrop-filter backdrop-blur-xl" : "sticky"}`}>
         <div className="bg-black absolute md:hidden py-8 top-0 w-screen"></div>
-      <nav className={`${props.menuState ? "h-screen" : ""} nav relative  flex justify-end items-center w-full py-8 md:py-4 h-full md:flex-row `}>
+      <nav className={`${props.menuState ? "h-screen md:h-auto" : ""} nav relative  flex justify-end items-center w-full py-8 md:py-4 h-full md:flex-row `}>
         <div className="left absolute left-0 top-0 w-40 lg:w-52  ">
           <Link to="/" className=" ">
             <img src={logo} alt="logo" className="w-full" />
@@ -69,6 +69,7 @@ const Header2 = (props) => {
           <div className="absolute bottom-2 left-0 w-full h-1/2 border-b-2 border-l-2 border-r-2 border-white z-0 "></div>
           </div>
           <OrderNow
+           country={props.country}
             display={
               <div className="orderBtn ml-10 text-white text-sm md:text-base rounded-full py-3 px-6  uppercase font-bold bg-blue hidden xl:block ">
                 Order Now

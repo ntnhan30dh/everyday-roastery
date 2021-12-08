@@ -43,7 +43,7 @@ export default function Home() {
       .then(res => res.json())
       .then(response => {
         setCountry(response.country_name)
-        //console.log("Country: ", response)
+        console.log("Country: ", response)
       })
       .catch((data, status) => {
         console.log("Request failed")
@@ -83,14 +83,14 @@ export default function Home() {
       {/* < SoMeBar/> */}
       <Header2
         country={country}
-        handleCountryUpdate={() => handleCountryUpdate()}
+        handleCountryUpdate={(c) => handleCountryUpdate(c)}
         toggleMenu={toggleMenu} menuState={menuActive}
       />
-      <Banner textStyle={text} />
-      <Menu2 textStyle={text} />
+      <Banner textStyle={text} country={country} />
+      <Menu2 textStyle={text} country={country}/>
       <BehindTheBeans textStyle={text} />
-      <HowToOrder textStyle={text} />
-      <DownloadApp textStyle={text} />
+      <HowToOrder textStyle={text} country={country} />
+      <DownloadApp textStyle={text} country={country}/>
       <News textStyle={text} />
       <IG textStyle={text} />
       <Footer2 textStyle={text}/>

@@ -36,6 +36,7 @@ const Banner = props => {
           </span>
         </h2>
         <OrderNow
+        country={props.country}
           display={
             <div className=" hidden md:block orderBtn  text-white text-base md:text-base rounded-full py-6 px-8  uppercase font-bold bg-blue mt-16  ">
               Order Now
