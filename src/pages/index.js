@@ -28,9 +28,11 @@ export default function Home() {
 
   const handleCountryUpdate = c => setCountry(c)
 
-  // const toggleMenu = () => {
-  // 	setmenuActive(!menuActive)
-  //   }
+  let [menuActive, setmenuActive] = useState(false)
+  
+  const toggleMenu = () => {
+    setmenuActive(!menuActive)
+  }
 
   // useEffect(() => {
   //   setVh( window.innerHeight -170)
@@ -74,7 +76,7 @@ export default function Home() {
   }
 
   return (
-    <div className="pageWrapper ">
+    <div className="pageWrapper relative">
       <head>
         <title>Everyday Roastery</title>
       </head>
@@ -82,6 +84,7 @@ export default function Home() {
       <Header2
         country={country}
         handleCountryUpdate={() => handleCountryUpdate()}
+        toggleMenu={toggleMenu} menuState={menuActive}
       />
       <Banner textStyle={text} />
       <Menu2 textStyle={text} />
