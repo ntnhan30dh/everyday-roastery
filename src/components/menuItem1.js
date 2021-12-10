@@ -15,6 +15,22 @@ import Mocha from "../images/menu/Hot Coffees/Mocha.png"
 import Mocha_Dark from "../images/menu/Hot Coffees/Dark Mocha.png"
 import Mocha_White from "../images/menu/Hot Coffees/White Mocha.png"
 
+import Iced_Americano from "../images/menu/Cold Coffees/Iced Americano.png"
+import Iced_Latte from "../images/menu/Cold Coffees/Iced Latte.png"
+import Iced_Spanish_Latte from "../images/menu/Cold Coffees/Iced Spanish Latte.png"
+import Iced_Macchiato from "../images/menu/Cold Coffees/Iced Macchiato.png"
+import Iced_Caramel_Latte from "../images/menu/Cold Coffees/Iced Caramel Latte.png"
+import Iced_Mocha from "../images/menu/Cold Coffees/Iced Mocha.png"
+import Iced_Dark_Mocha from "../images/menu/Cold Coffees/Iced Dark Mocha.png"
+import Iced_White_Mocha from "../images/menu/Cold Coffees/Iced White Mocha.png"
+
+
+
+
+
+
+
+
 import bg1 from "../images/menu/bg/menuBg1.png"
 import bg2 from "../images/menu/bg/menuBg2.png"
 import bg3 from "../images/menu/bg/menuBg3.png"
@@ -37,7 +53,22 @@ const MenuItem1 = props => {
     "Mocha": Mocha,
     "Salted Caramel Mocha": Mocha,
     "Dark Chocolate Mocha": Mocha_Dark,
-    "White Chocolate Mocha": Mocha_White
+    "White Chocolate Mocha": Mocha_White,
+
+    //cold
+
+    "Iced Americano":Iced_Americano,
+      "Iced Latte": Iced_Latte,
+      "Iced Vegan Latte":Iced_Latte,
+      "Iced Spanish Latte":Iced_Spanish_Latte,
+      "Iced Caramel Spanish Latte":Iced_Spanish_Latte,
+      "Iced Macchiato":Iced_Macchiato,
+      "Iced Caramel Latte":Iced_Caramel_Latte,
+      "Iced Espresso Shaker":Iced_Americano,
+      "Iced Mocha":Iced_Mocha,
+      "Iced Dark Chocolate Mocha":Iced_Dark_Mocha,
+      "Iced White Chocolate Mocha":Iced_White_Mocha,
+      "Iced Salted Caramel Mocha":Iced_Mocha,
   }
 
   const description = {
@@ -53,7 +84,21 @@ const MenuItem1 = props => {
 "Mocha":"Delicious combination of our rich espresso with premium chocolate and frothed milk",
 "Dark Chocolate Mocha":	"Premium rich, dark chocolate melted in creamy milk and topped with espresso and whipped cream",
 "White Chocolate Mocha": "Premium white chocolate melted in milk and topped with our rich espresso and whipped cream",
-"Salted Caramel Mocha":	"A creamy blend of premium dark chocolate, milk and caramel-flavoured syrup, topped with espresso and whipped cream"
+"Salted Caramel Mocha":	"A creamy blend of premium dark chocolate, milk and caramel-flavoured syrup, topped with espresso and whipped cream",
+
+// cold 
+"Iced Americano": "Equal parts espresso and water creating a bold and dark flavor, poured over ice",
+"Iced Latte": "Espresso shot covered with a thin layer of fresh, steamed milk foam, poured over ice",
+"Iced Vegan Latte": "Espresso shot covered with a thin layer of fresh, steamed oat milk foam, poured over ice",
+"Iced Spanish Latte":	"A sweet and flavorful blend of sweet condensed milk and our rich espresso, poured over ice",
+"Iced Caramel Spanish Latte": "A sweet and flavorful blend of caramelized condensed milk and our rich espresso, poured over ice",
+"Iced Macchiato":	"Freshly steamed fluffy milk foam, poured over ice and topped with our rich espresso",
+"Iced Caramel Latte":	"A smooth blend of milk and caramel flavour, topped with espresso, poured over ice",
+"Iced Espresso Shaker":	"Our rich espresso shaken over ice for the ultimate refresher",
+"Iced Mocha":	"Delicious combination of our rich espresso with premium chocolate and frothed milk, poured over ice",
+"Iced Dark Chocolate Mocha":	"Premium rich, dark chocolate melted in creamy milk, poured over ice, and topped with espresso and whipped cream",
+"Iced White Chocolate Mocha":	"Premium white chocolate melted in milk, poured over ice, and topped with our rich espresso and whipped cream",
+"Iced Salted Caramel Mocha":	"A creamy blend of premium dark chocolate, milk and caramel flavour, poured over ice, and topped with espresso and whipped cream",
   }
 const bg = [bg1,bg2,bg3,bg4,bg5,bg6,bg7,bg1,bg2,bg3,bg4,bg5,bg6,bg7]
   return (

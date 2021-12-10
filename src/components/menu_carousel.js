@@ -38,30 +38,65 @@ const Carousel = props => {
           slidesToShow: 2.2,
           slidesToScroll: 1,
           infinite: false,
-          arrows:false
+          arrows: false,
         },
       },
     ],
   }
 
-  const menuType =  {
-    "Hot Coffees":["Americano","Flat White", "Cappuccino", "Latte","Vegan Latte", "Spanish Latte","Caramel Spanish Latte","Macchiato", "Caramel Latte", "Mocha","Dark Chocolate Mocha","White Chocolate Mocha", "Salted Caramel Mocha"  ],
-    // need to update 
-    "Cold Coffees":["Flat White","Spanish Latte", "Latte", "Americano", "Flat White"],
-    "Frappes":["Latte","Spanish Latte", "Latte", "Americano", "Flat White"],
-    "Cold Drinks":["Spanish Latte", "Latte", "Americano", "Flat White"],
-    "Hot Drinks":["Spanish Latte", "Latte", "Americano", "Flat White"],
-    "tarot":["Sharing", "Treat", "Focus", "Habit", "Break", "Energy"],
+  const menuType = {
+    "Hot Coffees": [
+      "Americano",
+      "Flat White",
+      "Cappuccino",
+      "Latte",
+      "Vegan Latte",
+      "Spanish Latte",
+      "Caramel Spanish Latte",
+      "Macchiato",
+      "Caramel Latte",
+      "Mocha",
+      "Dark Chocolate Mocha",
+      "White Chocolate Mocha",
+      "Salted Caramel Mocha",
+    ],
+    "Cold Coffees": [
+      "Iced Americano",
+      "Iced Latte",
+      "Iced Vegan Latte",
+      "Iced Spanish Latte",
+      "Iced Caramel Spanish Latte",
+      "Iced Macchiato",
+      "Iced Caramel Latte",
+      "Iced Espresso Shaker",
+      "Iced Mocha",
+      "Iced Dark Chocolate Mocha",
+      "Iced White Chocolate Mocha",
+      "Iced Salted Caramel Mocha",
+    ],
+    // need to update
+    "Frappes": ["Latte", "Spanish Latte", "Latte", "Americano", "Flat White"],
+    "Cold Drinks": ["Spanish Latte", "Latte", "Americano", "Flat White"],
+    "Hot Drinks": ["Spanish Latte", "Latte", "Americano", "Flat White"],
+    "tarot": ["Sharing", "Treat", "Focus", "Habit", "Break", "Energy"],
   }
   const itemList = menuType[props.type]
   return (
     <div className="menuSlides my-10 px-2 md:mx-4 ">
       <Slider {...settings} className="">
-       {itemList.map(i=>{
-           return (
-            props.type==="tarot" ?<MenuItem2 name={i} country={props.country}/>: <MenuItem1 name={i} position = {itemList.indexOf(i)} menuType={props.type} textStyle={props.textStyle } country={props.country}/>
-           )
-       })}
+        {itemList.map(i => {
+          return props.type === "tarot" ? (
+            <MenuItem2 name={i} country={props.country} />
+          ) : (
+            <MenuItem1
+              name={i}
+              position={itemList.indexOf(i)}
+              menuType={props.type}
+              textStyle={props.textStyle}
+              country={props.country}
+            />
+          )
+        })}
       </Slider>
     </div>
   )
