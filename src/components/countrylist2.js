@@ -28,6 +28,7 @@ class CountryList2 {
               "Turkey",
               'Egypt'
             ];
+            names.sort((a, b) => a.localeCompare(b))
         let res = [];
         names.map((name) =>
           res.push({

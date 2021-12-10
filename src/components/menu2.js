@@ -3,6 +3,8 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Carousel from "../components/menu_carousel"
 
+import bgText from '../images/menu/bg/menuBg7.png'
+
 const Menu2 = props => {
   let [menuType, setMenuType] = useState("Hot Coffees")
 
@@ -11,7 +13,7 @@ const Menu2 = props => {
       <button
         className={`max-w-max text-base md:text-4xl font-black uppercase mx-4 my-2 hover:opacity-100 ${
           type === menuType
-            ? "opacity-100 border-b-2 border-black"
+            ? "opacity-100 border-b-4 border-black"
             : "opacity-15"
         }`}
         onClick={() => {
@@ -106,7 +108,11 @@ const Menu2 = props => {
     <section className="menuContainer pt:20 md:pt-64 "  id="menu">
       <span id="menu" className="-mt:80"> </span>
       <h1
-        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto`}
+        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto hoverText bg7` }
+        style={{
+   
+    
+  }}
       >
         OUR MENU
       </h1>
@@ -118,7 +124,7 @@ const Menu2 = props => {
         {menuTypeItem("Hot Drinks")}
       </ul>
       <Carousel type={menuType} textStyle={props.textStyle } country={props.country}/>
-      <div className="text  mx-auto text-center md:my-20 ">
+      <div className="text  mx-auto text-center pt-10 md:pt-0  md:my-20 ">
         <h2 className={`${props.textStyle.h2} text-center font-black`}>
           {" "}
           Don’t know what <br /> to choose?

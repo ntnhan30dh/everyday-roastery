@@ -76,7 +76,7 @@ export default function Home() {
   }
 
   return (
-    <div className="pageWrapper relative">
+    <div className="pageWrapper relative 2xl:px-1/20">
       <head>
         <title>Everyday Roastery</title>
       </head>

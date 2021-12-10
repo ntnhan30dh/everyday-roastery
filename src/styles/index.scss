@@ -85,14 +85,6 @@ textarea {
 
 // menu
 .menuContainer {
-  h1:hover {
-    background-clip: text !important;
-    background: url(../images/pattern.png);
-    background-size: contain;
-    -webkit-text-fill-color: transparent;
-    background-color: #fff;
-  }
-
   .menuSlides {
     .menuItem1Wrap {
       .imgContainer {
@@ -195,4 +187,36 @@ button:focus {
   .is-inactive {
     display: inline-flex ;
   }
+}
+
+// hover Text
+
+.hoverText:hover {
+  background-clip: text !important;
+  background-size: contain;
+  -webkit-text-fill-color: transparent;
+  background-color: #fff;
+  -webkit-text-stroke: 4px black;
+}
+
+.bg1:hover{
+  background: url(../images/menu/bg/menuBg1.png);
+}
+.bg2:hover{
+  background: url(../images/menu/bg/menuBg2.png);
+}
+.bg3:hover{
+  background: url(../images/menu/bg/menuBg3.png);
+}
+.bg4:hover{
+  background: url(../images/menu/bg/menuBg4.png);
+}
+.bg5:hover{
+  background: url(../images/menu/bg/menuBg5.png);
+}
+.bg6:hover{
+  background: url(../images/menu/bg/menuBg6.png);
+}
+.bg7:hover{
+  background: url(../images/menu/bg/menuBg7.png);
 }

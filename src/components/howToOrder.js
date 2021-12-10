@@ -35,10 +35,10 @@ const HowToOrder = props => {
   }
 
   return (
-    <section  className="howToOrder  " id="howToOrder">
+    <section  className="howToOrder  md:pt-40" id="howToOrder">
       {/* <span id="howToOrder" className="mt-10"> </span> */}
     <h1
-        className={`${props.textStyle.h1} font-black text-center mx-auto pt-20 lg:pt-28`}
+        className={`${props.textStyle.h1} font-black text-center mx-auto pt-20 lg:pt-28 hoverText bg2`}
       >
       HOW TO ORDER
       </h1>

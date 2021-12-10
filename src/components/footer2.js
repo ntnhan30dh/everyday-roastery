@@ -46,14 +46,14 @@ const Footer2 = props => {
         </div>
       </div>
 
-      <div className="soMe lg:w-1/2 /lg:text-center">
+      <div className="soMe lg:w-1/2 lg:text-center">
         <h3
           className={`uppercase ${props.textStyle.h3} font-black hidden lg:block`}
         >
           we brew for <br /> you everyday{" "}
         </h3>
-        <h4 className='uppercase font-black hidden lg:block'>FOLLOW US ON SOCAIL MEDIA</h4>
-        <div className="soMeWrap flex justify-center lg:justify-start">
+        <h4 className='uppercase font-black hidden lg:block'>FOLLOW US ON SOCIAL MEDIA</h4>
+        <div className="soMeWrap flex justify-center /lg:justify-start">
           {soMeIcons.map(i => {
             return (
               <div className="w-10 mx-4">

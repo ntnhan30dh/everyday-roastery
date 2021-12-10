@@ -39,9 +39,9 @@ const News = props => {
 
   
   return (
-    <section className="news" id="news">
+    <section className="news md:pt-48" id="news">
       <h1
-        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto md:pt-24 md:pb-10`}
+        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto  md:pb-10 hoverText bg3`}
       >
         news
       </h1>  

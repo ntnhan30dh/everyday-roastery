@@ -2,6 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
+import Gif from '../images/bannerGif.gif'
+
 import OrderNow from "./ordernow"
 
 const Banner = props => {
@@ -45,8 +47,11 @@ const Banner = props => {
         />
       </div>
 
-      <Img fluid={data.banner.childImageSharp.fluid} className="banner " className="hidden md:block"/>
-      <Img fluid={data.banner_m.childImageSharp.fluid} className="banner mobile" className=" md:hidden"/>
+      {/* <Img fluid={data.banner.childImageSharp.fluid} className="banner " className="hidden md:block"/> */}
+<div className="hidden md:block">
+  <img src={Gif} alt="gif" />
+   </div>   
+   <Img fluid={data.banner_m.childImageSharp.fluid} className="banner mobile" className=" md:hidden"/>
    
             <div className="  md:hidden orderBtn  text-center  text-white text-base md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-10">
               Order Now

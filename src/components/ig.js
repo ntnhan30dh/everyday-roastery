@@ -59,9 +59,9 @@ const IG = props => {
       }
 
   return (
-    <section className="ig mt-10 md:mt-28" id="ig">
+    <section className="ig mt-10 md:mt-48" id="ig">
       <h1
-        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto py-10 ` }
+        className={`${props.textStyle.h1} font-black text-center max-w-max mx-auto py-10 hoverText bg4` }
       >
         Follow us on instagram
       </h1>

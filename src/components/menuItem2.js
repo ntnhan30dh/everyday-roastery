@@ -39,8 +39,8 @@ const MenuItem2 = props => {
   }
 
   return (
-    <div className="transform scale-95 hover:scale-100 duration-200 /mx-4 /hover:mx-2 " >
-    {/* onMouseLeave={()=>setIsFlipped(false)} */}
+    <div className="transform scale-95 hover:scale-100 duration-200 /mx-4 /hover:mx-2" onMouseLeave={()=>setIsFlipped(false)} >
+ 
       <ReactCardFlip
         isFlipped={isFlipped}
         flipSpeedBackToFront={1.2}

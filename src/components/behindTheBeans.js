@@ -142,6 +142,21 @@ const BehindTheBeans = props => {
     },
   ]
 
+  const parallaxUp2 = [
+    {
+      start: "self",
+      duration: 1000,
+      properties: [
+        {
+          startValue: 10,
+          endValue: 0,
+          property: "translateY",
+          unit: "%",
+        },
+      ],
+    },
+  ]
+
   const hoverImg = "transform hover:scale-110 duration-200"
   const textDiv = "w-3/4 md:w-2/3 lg:w-1/2"
   const p = "md:w-2/3"
@@ -164,9 +179,9 @@ const BehindTheBeans = props => {
   }
 
   return (
-    <section id="behindTheBeans" className="mx-4 md:mx-1/10 lg:mx-1/20">
+    <section id="behindTheBeans" className="mx-4 md:mx-1/10 lg:mx-1/20 md:pt-20">
       <h1
-        className={`${props.textStyle.h1_1} font-black text-center max-w-max mx-auto mx-2 py-10 md:py-20 lg:py-24`}
+        className={`${props.textStyle.h1_1} font-black text-center max-w-max mx-auto mx-2 py-10 md:py-20 lg:py-24 hoverText bg1`}
       >
         Behind the beanS
       </h1>
@@ -263,7 +278,7 @@ const BehindTheBeans = props => {
         <div className="picContainer3 md:w-1/2 mt-1/10">
           <div className="top relative w-3/4">
             <Plx
-              parallaxData={parallaxUp}
+              parallaxData={parallaxUp2}
               className="absolute top-1/10 -right-1/10  w-full z-20 overflow-hidden"
             >
               <Img
@@ -280,7 +295,7 @@ const BehindTheBeans = props => {
                 fluid={data.pic3_2.childImageSharp.fluid}
               />
             </div> */}
-            <div className="relative -mt-1/6 -right-1/4   z-30  ">
+            <div className="relative -right-1/4   z-30  ">
           {hoverPic(
             data.pic3_2.childImageSharp.fluid,
             data.pic3_2_bg.childImageSharp.fluid,

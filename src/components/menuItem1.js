@@ -37,8 +37,8 @@ const bg = [bg1,bg2,bg3,bg4,bg5,bg6,bg7]
       trigger={
         <div className="menuItem1Wrap mx-2 md:mx-4">
           <div className="relative">
-            <div className="absolute top-0 mx-2">
-              <img src={bg[props.position]} alt={"background"} />
+            <div className="absolute top-0 mx-2 h-full">
+              <img src={bg[props.position]} alt={"background"}  className="object-cover h-full"/>
             </div>
             <div className=" imgContainer  overflow-hidden transform hover:scale-75 	 duration-200 ">
               <div className=" imgWrap transform hover:scale-160 duration-200 hover:translate-y-1/4 ">

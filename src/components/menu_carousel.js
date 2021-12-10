@@ -45,9 +45,9 @@ const Carousel = props => {
   }
 
   const menuType =  {
-    "Hot Coffees":["Spanish Latte", "Spanish Latte", "Latte", "Americano", "Flat White"],
+    "Hot Coffees":["Spanish Latte", "Latte", "Americano", "Flat White"],
     // need to update 
-    "Cold Coffees":["Spanish Latte", "Latte", "Americano", "Flat White"],
+    "Cold Coffees":["Flat White","Spanish Latte", "Latte", "Americano", "Flat White"],
     "Frappes":["Latte","Spanish Latte", "Latte", "Americano", "Flat White"],
     "Cold Drinks":["Spanish Latte", "Latte", "Americano", "Flat White"],
     "Hot Drinks":["Spanish Latte", "Latte", "Americano", "Flat White"],
