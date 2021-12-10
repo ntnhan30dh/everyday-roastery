@@ -1,6 +1,8 @@
 import React, { useState } from "react"
 import ReactCardFlip from "react-card-flip"
 
+import OrderNow from "./ordernow"
+
 import Sharing from "../images/menu/tarot/cardSharing_back.png"
 import Treat from "../images/menu/tarot/cardTreat_back.png"
 import Focus from "../images/menu/tarot/cardFocus_back.png"
@@ -37,7 +39,8 @@ const MenuItem2 = props => {
   }
 
   return (
-    <div className="transform scale-95 hover:scale-100 duration-200 /mx-4 /hover:mx-2 " onMouseLeave={()=>setIsFlipped(false)}>
+    <div className="transform scale-95 hover:scale-100 duration-200 /mx-4 /hover:mx-2 " >
+    {/* onMouseLeave={()=>setIsFlipped(false)} */}
       <ReactCardFlip
         isFlipped={isFlipped}
         flipSpeedBackToFront={1.2}
@@ -48,8 +51,20 @@ const MenuItem2 = props => {
           <img src={pics[props.name]} alt={props.name} />
         </div>
 
-        <div onClick={() => setIsFlipped(!isFlipped)} >
+        <div onClick={() => setIsFlipped(!isFlipped)} className="relative">
+        <div>
         <img src={pics_front[props.name]} alt={props.name} />
+        </div>
+        <div className="absolute bottom-0 w-full text-center pb-1/5">
+        <OrderNow
+           country={props.country}
+            display={
+              <div className="orderBtn  text-white text-xs md:text-base rounded-full py-1 md:py-3 px-3 md:px-6  uppercase font-bold bg-blue  ">
+                Order Now
+              </div>
+            }
+          />
+        </div>
         </div>
       </ReactCardFlip>
     </div>

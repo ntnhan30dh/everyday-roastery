@@ -1,6 +1,9 @@
 import React from "react"
 import { Modal } from "semantic-ui-react"
 
+import OrderNow from "./ordernow"
+
+
 import Americano from "../images/menu/Hot Coffees/Americano.png"
 import Flat_white from "../images/menu/Hot Coffees/Flat white.png"
 import Latte from "../images/menu/Hot Coffees/Latte.png"
@@ -63,10 +66,17 @@ const bg = [bg1,bg2,bg3,bg4,bg5,bg6,bg7]
       {props.menuType}
       </span>
       <div className={`uppercase ${props.textStyle.h3} font-black py-4 md:py-6  border-b-2 border-black border-opacity-10`}>{props.name} </div>
-      <p className={`${props.textStyle.p} my-4 md:my-10 pb-1/2`}>
+      <p className={`${props.textStyle.p} my-4 md:my-10 `}>
       {description[props.name]}
       </p>
-  
+      <OrderNow
+           country={props.country}
+            display={
+              <div className="orderBtn  text-white text-sm md:text-base rounded-full py-3 px-6  uppercase font-bold bg-blue mb-1/2 ">
+                Order Now
+              </div>
+            }
+          />
       </div>
     </div>
     </Modal>
