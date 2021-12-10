@@ -8,6 +8,12 @@ import Americano from "../images/menu/Hot Coffees/Americano.png"
 import Flat_white from "../images/menu/Hot Coffees/Flat white.png"
 import Latte from "../images/menu/Hot Coffees/Latte.png"
 import Spanish_Latte from "../images/menu/Hot Coffees/Spanish Latte.png"
+import Cappuccino from "../images/menu/Hot Coffees/Cappuccino.png"
+import Macchiato from "../images/menu/Hot Coffees/Macchiato.png"
+import Caramel_Latte from "../images/menu/Hot Coffees/Caramel Latte.png"
+import Mocha from "../images/menu/Hot Coffees/Mocha.png"
+import Mocha_Dark from "../images/menu/Hot Coffees/Dark Mocha.png"
+import Mocha_White from "../images/menu/Hot Coffees/White Mocha.png"
 
 import bg1 from "../images/menu/bg/menuBg1.png"
 import bg2 from "../images/menu/bg/menuBg2.png"
@@ -22,16 +28,34 @@ const MenuItem1 = props => {
     "Americano": Americano,
     "Flat White": Flat_white,
     "Latte": Latte,
+    "Vegan Latte": Latte,
     "Spanish Latte": Spanish_Latte,
+    "Caramel Spanish Latte": Spanish_Latte,
+    "Cappuccino": Cappuccino,
+    "Macchiato": Macchiato,
+    "Caramel Latte": Caramel_Latte,
+    "Mocha": Mocha,
+    "Salted Caramel Mocha": Mocha,
+    "Dark Chocolate Mocha": Mocha_Dark,
+    "White Chocolate Mocha": Mocha_White
   }
 
   const description = {
-    "Americano": 'Espresso shot covered with a thin layer of fresh, steamed milk foam. Espresso shot covered with a thin layer of fresh, steamed milk foam.',
-    "Flat White": 'Espresso shot covered with a thin layer of fresh, steamed milk foam. Espresso shot covered with a thin layer of fresh, steamed milk foam.',
-    "Latte": 'Espresso shot covered with a thin layer of fresh, steamed milk foam. Espresso shot covered with a thin layer of fresh, steamed milk foam.',
-    "Spanish Latte": 'Espresso shot covered with a thin layer of fresh, steamed milk foam. Espresso shot covered with a thin layer of fresh, steamed milk foam.',
+ "Americano":	"Equal parts espresso and water creating a bold and dark flavor",
+"Flat White":	"Perfect balance of espresso (extra shot) coated with a delicate layer of velvety milk foam",
+"Cappuccino":	"Dark espresso enveloped with a thick layer of steamed, frothy milk foam",
+"Latte":	"Espresso shot covered with a thin layer of fresh, steamed milk foam",
+"Vegan Latte":	"Espresso shot covered with a thin layer of fresh, steamed oat milk foam",
+"Spanish Latte":	"A sweet and flavorful blend of sweet condensed milk and our rich espresso",
+"Caramel Spanish Latte"	:"A sweet and flavorful blend of caramelized condensed milk and our rich espresso",
+"Macchiato": "Freshly steamed fluffy milk foam with espresso roast",
+"Caramel Latte":	"A smooth blend of milk and caramel flavour, topped with espresso",
+"Mocha":"Delicious combination of our rich espresso with premium chocolate and frothed milk",
+"Dark Chocolate Mocha":	"Premium rich, dark chocolate melted in creamy milk and topped with espresso and whipped cream",
+"White Chocolate Mocha": "Premium white chocolate melted in milk and topped with our rich espresso and whipped cream",
+"Salted Caramel Mocha":	"A creamy blend of premium dark chocolate, milk and caramel-flavoured syrup, topped with espresso and whipped cream"
   }
-const bg = [bg1,bg2,bg3,bg4,bg5,bg6,bg7]
+const bg = [bg1,bg2,bg3,bg4,bg5,bg6,bg7,bg1,bg2,bg3,bg4,bg5,bg6,bg7]
   return (
     <Modal
       trigger={

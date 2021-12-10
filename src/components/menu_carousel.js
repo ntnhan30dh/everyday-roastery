@@ -8,7 +8,7 @@ const Carousel = props => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 3000,
+    speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: false,
@@ -45,7 +45,7 @@ const Carousel = props => {
   }
 
   const menuType =  {
-    "Hot Coffees":["Spanish Latte", "Latte", "Americano", "Flat White"],
+    "Hot Coffees":["Americano","Flat White", "Cappuccino", "Latte","Vegan Latte", "Spanish Latte","Caramel Spanish Latte","Macchiato", "Caramel Latte", "Mocha","Dark Chocolate Mocha","White Chocolate Mocha", "Salted Caramel Mocha"  ],
     // need to update 
     "Cold Coffees":["Flat White","Spanish Latte", "Latte", "Americano", "Flat White"],
     "Frappes":["Latte","Spanish Latte", "Latte", "Americano", "Flat White"],
