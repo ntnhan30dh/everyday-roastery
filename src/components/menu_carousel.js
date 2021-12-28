@@ -75,21 +75,26 @@ const Carousel = props => {
       "Iced Salted Caramel Mocha",
     ],
     // need to update
-    "Frappes": [
+    Frappes: [
       "Dark Mocha Frappe",
       "White Mocha Frappe",
       "Chocolate Chip Cookie Frappe",
       "Chocolate Hazelnut Frappe",
       "Vanilla Frappe",
-     // "Salted Caramel Frappe",
+      "Salted Caramel Frappe",
       "Chocolate Frappe",
       "Strawberry Frappe",
       "Green Apple Mint Frappe",
-      "Mango Frappe", 
-      ],
-    "Cold Drinks": ["Spanish Latte", "Latte", "Americano", "Flat White"],
-    "Hot Drinks": ["Spanish Latte", "Latte", "Americano", "Flat White"],
-    "tarot": ["Sharing", "Treat", "Focus", "Habit", "Break", "Energy"],
+      "Mango Frappe",
+    ],
+    "Cold Drinks": [
+      "Red Berry Ice Tea",
+      "Peach Ice Tea",
+      "Lemon Ice Tea",
+      "Pear & Peach Green Ice Tea",
+    ],
+    "Hot Drinks": ["Hot Chocolate", "Black Tea", "Green Tea","Hot Chocolate"],
+    tarot: ["Sharing", "Treat", "Focus", "Habit", "Break", "Energy"],
   }
   const itemList = menuType[props.type]
   return (
