@@ -11,6 +11,7 @@ import Cappuccino from "../images/menu/Hot Coffees/Cappuccino.png"
 import Macchiato from "../images/menu/Hot Coffees/Macchiato.png"
 import Caramel_Latte from "../images/menu/Hot Coffees/Caramel Latte.png"
 import Mocha from "../images/menu/Hot Coffees/Mocha.png"
+import Salted_Caramel_Mocha from "../images/menu/Hot Coffees/Salted Caramel Mocha.png"
 import Mocha_Dark from "../images/menu/Hot Coffees/Dark Mocha.png"
 import Mocha_White from "../images/menu/Hot Coffees/White Mocha.png"
 
@@ -22,6 +23,10 @@ import Iced_Caramel_Latte from "../images/menu/Cold Coffees/Iced Caramel Latte.p
 import Iced_Mocha from "../images/menu/Cold Coffees/Iced Mocha.png"
 import Iced_Dark_Mocha from "../images/menu/Cold Coffees/Iced Dark Mocha.png"
 import Iced_White_Mocha from "../images/menu/Cold Coffees/Iced White Mocha.png"
+import Iced_Salted_Caramel_Mocha from "../images/menu/Cold Coffees/Iced Salted Caramel Mocha.png"
+import Iced_Espresso_Shaker from "../images/menu/Cold Coffees/Iced Espresso Shaker.png"
+
+
 
 import Dark_Mocha_Frappe from "../images/menu/Frappes/Dark Mocha Frappe.png"
 import White_Mocha_Frappe from "../images/menu/Frappes/White Mocha Frappe.png"
@@ -63,7 +68,7 @@ const MenuItem1 = props => {
     "Macchiato": Macchiato,
     "Caramel Latte": Caramel_Latte,
     "Mocha": Mocha,
-    "Salted Caramel Mocha": Mocha,
+    "Salted Caramel Mocha": Salted_Caramel_Mocha,
     "Dark Chocolate Mocha": Mocha_Dark,
     "White Chocolate Mocha": Mocha_White,
 
@@ -76,11 +81,11 @@ const MenuItem1 = props => {
     "Iced Caramel Spanish Latte": Iced_Spanish_Latte,
     "Iced Macchiato": Iced_Macchiato,
     "Iced Caramel Latte": Iced_Caramel_Latte,
-    "Iced Espresso Shaker": Iced_Americano,
+    "Iced Espresso Shaker": Iced_Espresso_Shaker,
     "Iced Mocha": Iced_Mocha,
     "Iced Dark Chocolate Mocha": Iced_Dark_Mocha,
     "Iced White Chocolate Mocha": Iced_White_Mocha,
-    "Iced Salted Caramel Mocha": Iced_Mocha,
+    "Iced Salted Caramel Mocha": Iced_Salted_Caramel_Mocha,
 
     // Frappes
     "Dark Mocha Frappe": Dark_Mocha_Frappe,
