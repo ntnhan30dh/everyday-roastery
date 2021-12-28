@@ -24,10 +24,16 @@ import Iced_Mocha from "../images/menu/Cold Coffees/Iced Mocha.png"
 import Iced_Dark_Mocha from "../images/menu/Cold Coffees/Iced Dark Mocha.png"
 import Iced_White_Mocha from "../images/menu/Cold Coffees/Iced White Mocha.png"
 
-
-
-
-
+import Dark_Mocha_Frappe from "../images/menu/Frappes/Dark Mocha Frappe.png"
+import White_Mocha_Frappe from "../images/menu/Frappes/White Mocha Frappe.png"
+import Chocolate_Chip_Cookie_Frappe from "../images/menu/Frappes/Chocolate Chip Cookie Frappe.png"
+import Chocolate_Hazelnut_Frappe from "../images/menu/Frappes/Chocolate Frappe.png"
+import Vanilla_Frappe from "../images/menu/Frappes/Vanilla Frappe.png"
+import Salted_Caramel_Frappe from "../images/menu/Frappes/Salted Caramel Frappe.png"
+import Chocolate_Frappe from "../images/menu/Frappes/Chocolate Frappe.png"
+import Strawberry_Frappe from "../images/menu/Frappes/Strawberry Frappe.png"
+import Green_Apple_Mint_Frappe from "../images/menu/Frappes/Green Apple Mint Frappe.png"
+import Mango_Frappe from "../images/menu/Frappes/Mango Frappe.png"
 
 
 
@@ -57,7 +63,7 @@ const MenuItem1 = props => {
 
     //cold
 
-    "Iced Americano":Iced_Americano,
+     "Iced Americano":Iced_Americano,
       "Iced Latte": Iced_Latte,
       "Iced Vegan Latte":Iced_Latte,
       "Iced Spanish Latte":Iced_Spanish_Latte,
@@ -69,6 +75,18 @@ const MenuItem1 = props => {
       "Iced Dark Chocolate Mocha":Iced_Dark_Mocha,
       "Iced White Chocolate Mocha":Iced_White_Mocha,
       "Iced Salted Caramel Mocha":Iced_Mocha,
+
+      // Frappes
+      "Dark Mocha Frappe": Dark_Mocha_Frappe,
+      "White Mocha Frappe":White_Mocha_Frappe,
+      "Chocolate Chip Cookie Frappe":Chocolate_Chip_Cookie_Frappe,
+      "Chocolate Hazelnut Frappe":Chocolate_Hazelnut_Frappe,
+      "Vanilla Frappe":Vanilla_Frappe,
+      "Salted Caramel Frappe":Salted_Caramel_Frappe,
+      "Chocolate Frappe":Chocolate_Frappe,
+      "Strawberry Frappe":Strawberry_Frappe,
+      "Green Apple Mint Frappe":Green_Apple_Mint_Frappe,
+      "Mango Frappe":Mango_Frappe, 
   }
 
   const description = {
@@ -99,7 +117,21 @@ const MenuItem1 = props => {
 "Iced Dark Chocolate Mocha":	"Premium rich, dark chocolate melted in creamy milk, poured over ice, and topped with espresso and whipped cream",
 "Iced White Chocolate Mocha":	"Premium white chocolate melted in milk, poured over ice, and topped with our rich espresso and whipped cream",
 "Iced Salted Caramel Mocha":	"A creamy blend of premium dark chocolate, milk and caramel flavour, poured over ice, and topped with espresso and whipped cream",
-  }
+
+// FRAPPES
+
+"Dark Mocha Frappe":	"Luxuriate in this indulgent mix of premium dark chocolate, topped with espresso, cold milk, ice and a dollop of freshly whipped cream.",
+"White Mocha Frappe	": "Revel in cool frappé heaven with this delicate union of espresso, white chocolate, milk and ice, finished with a helping of velvety whipped cream.",
+"Chocolate Chip Cookie Frappe": "Our signature frappé is given a serious makeover with the sweet flavour of a chocolate chip cookie, plus the usual mix of espresso, milk, ice and topping of whipped cream.", 
+"Chocolate Hazelnut Frappe":"The rich flavour of roasted hazelnut has been combined with our premium blend of chocolate, along with dark espresso, milk and ice, decadently topped with a layer of whipped cream.",
+"Vanilla Frappe":	"Vanilla beans are introduced to our classic frappé drink, to give added sweetness and aroma to our signature fusion of coffee, milk, ice and whipped cream topping.", 
+"Salted Caramel Frappe": "This perfect combination of sweet and salty blends the indulgent flavours of salted caramel, with rich espresso, fresh milk, ice and a dollop of freshly whipped cream.", 
+"Chocolate Frappe":	"Our premium dark chocolate takes centre stage in this refreshing frappé that mixes coffee, milk, ice and is delicately garnished with whipped cream.", 
+"Strawberry Frappe":	"Our signature frappé is combined with the sweet juiciness of fresh strawberries in this invigorating summertime twist.", 
+"Green Apple Mint Frappe":	"A refreshing blend of ice and a combination of tart green apple and mint flavours",
+"Mango Frappe" :	"The exotic flavour of mango is introduced to our classic chilled frappé to give a fruity kick to your day."
+
+}
 const bg = [bg1,bg2,bg3,bg4,bg5,bg6,bg7,bg1,bg2,bg3,bg4,bg5,bg6,bg7]
   return (
     <Modal

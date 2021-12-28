@@ -10,7 +10,7 @@ import Menu2 from "../components/menu2"
 import BehindTheBeans from "../components/behindTheBeans"
 import HowToOrder from "../components/howToOrder"
 import DownloadApp from "../components/downloadApp"
-import News from "../components/news"
+// import News from "../components/news"
 import IG from "../components/ig"
 import Footer2 from "../components/footer2"
 // import MainSlides from "../components/mainSlides"
@@ -91,7 +91,7 @@ export default function Home() {
       <BehindTheBeans textStyle={text} />
       <HowToOrder textStyle={text} country={country} />
       <DownloadApp textStyle={text} country={country}/>
-      <News textStyle={text} />
+      {/* <News textStyle={text} /> */}
       <IG textStyle={text} />
       <Footer2 textStyle={text}/>
       
