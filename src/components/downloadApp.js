@@ -5,6 +5,9 @@ import BG from "../images/downloadApp/downLoadApp_bg.png"
 import BG_mobile from "../images/downloadApp/downLoadApp_bg__mobile.png"
 import QR from "../images/downloadApp/QRcode.png"
 import iPhone_front from "../images/downloadApp/iPhone_front.png"
+import iPhone_front_Yemeksepeti from "../images/downloadApp/iPhone_front_Yemeksepeti.png"
+import iPhone_front_Talabat from "../images/downloadApp/iPhone_front_Talabat.png"
+import iPhone_front_Hungerstation from "../images/downloadApp/iPhone_front_Hungerstation.png"
 import iPhone_back from "../images/downloadApp/iPhone_back.png"
 import Stamp from "../images/downloadApp/stamp.png"
 import Stamp_logo from "../images/downloadApp/stamp_logo.png"
@@ -40,6 +43,22 @@ const DownLoadApp = props => {
       ],
     },
   ];
+
+  const iPhone = {
+    "Saudi Arabia":iPhone_front_Hungerstation,
+    "Singapore":iPhone_front,
+    "Bahrain":iPhone_front_Talabat,
+    "Kuwait":iPhone_front_Talabat,
+    "Malaysia":iPhone_front,
+    "Hungary":iPhone_front,
+    "Germany":iPhone_front,
+    "UAE":iPhone_front_Talabat,
+    "Qatar":iPhone_front_Talabat,
+    "Turkey":iPhone_front_Yemeksepeti,
+    'Egypt':iPhone_front_Talabat
+  }
+
+  const iPhonePic = iPhone[props.country] || iPhone_front
 
   return (
     <section className="downloadApp relative overflow-x-hidden md:overflow-x-visible lg:mt-44">
@@ -78,7 +97,7 @@ const DownLoadApp = props => {
           <div className="iphone relative w-3/4 md:w-4/5 sm:w-1/2 mx-auto ">
             <Plx
               parallaxData={parallaxDown} className="iphone_front absolute top-0 z-10 mx-2">
-              <img src={iPhone_front} alt="iPhone_front" />
+              <img src={iPhonePic} alt="iPhone_front" />
             </Plx>
             <div className="iphone_back absolute w-full  mt-1/10 left-1/3">
               <img src={iPhone_back} alt="iPhone_back" />
