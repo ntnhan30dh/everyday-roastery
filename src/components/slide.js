@@ -46,7 +46,7 @@ const Slide = props => {
         {props.text}
         <OrderNow
           display={
-            <div className="orderBtn text-white p-4 uppercase text-xl sm:text-2xl font-extrabold bg-blue">
+            <div className="orderBtn text-white p-4 uppercase text-sm md:text-base font-extrabold bg-blue tracking-wider">
               order now! 
             </div>
           }

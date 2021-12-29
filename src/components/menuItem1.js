@@ -235,7 +235,7 @@ const MenuItem1 = props => {
                 className="object-cover h-full"
               />
             </div>
-            <div className=" imgContainer  overflow-hidden transform hover:scale-75 	 duration-200 ">
+            <div className=" imgContainer  overflow-hidden transform hover:scale-80 	 duration-200 ">
               <div className=" imgWrap transform hover:scale-160 duration-200 hover:translate-y-1/4 ">
                 <img src={pics[props.name]} alt={props.name} />
               </div>
@@ -271,7 +271,7 @@ const MenuItem1 = props => {
           <OrderNow
             country={props.country}
             display={
-              <div className="orderBtn  text-white text-sm md:text-base rounded-full py-3 px-6  uppercase font-bold bg-blue mb-1/2 ">
+              <div className="orderBtn  text-white text-sm md:text-base rounded-full py-3 px-6  uppercase font-bold bg-blue mb-1/2 tracking-wider ">
                 Order Now
               </div>
             }

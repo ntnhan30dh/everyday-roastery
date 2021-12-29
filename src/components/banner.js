@@ -40,7 +40,7 @@ const Banner = props => {
         <OrderNow
         country={props.country}
           display={
-            <div className=" hidden md:block orderBtn  text-white text-base md:text-base rounded-full py-6 px-8  uppercase font-bold bg-blue mt-16  ">
+            <div className=" hidden md:block orderBtn  text-white text-sm md:text-base rounded-full py-6 px-8  uppercase font-bold bg-blue mt-16 tracking-wider  ">
               Order Now
             </div>
           }
@@ -53,7 +53,7 @@ const Banner = props => {
    </div>   
    <Img fluid={data.banner_m.childImageSharp.fluid} className="banner mobile" className=" md:hidden"/>
    
-            <div className="  md:hidden orderBtn  text-center  text-white text-base md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-10">
+            <div className="  md:hidden orderBtn  text-center  text-white text-sm md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-10 tracking-wider">
               Order Now
             </div>
          

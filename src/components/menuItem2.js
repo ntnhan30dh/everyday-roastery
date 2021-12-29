@@ -59,7 +59,7 @@ const MenuItem2 = props => {
         <OrderNow
            country={props.country}
             display={
-              <div className="orderBtn  text-white text-xs md:text-base rounded-full py-1 md:py-3 px-3 md:px-6  uppercase font-bold bg-blue  ">
+              <div className="orderBtn  text-white text-sm md:text-base rounded-full py-1 md:py-3 px-3 md:px-6  uppercase font-bold bg-blue tracking-wider ">
                 Order Now
               </div>
             }

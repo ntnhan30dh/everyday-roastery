@@ -76,7 +76,7 @@ export default function Home() {
   }
 
   return (
-    <div className="pageWrapper relative 2xl:px-1/20">
+    <div className="pageWrapper relative ">
       <head>
         <title>Everyday Roastery</title>
       </head>
@@ -86,6 +86,7 @@ export default function Home() {
         handleCountryUpdate={(c) => handleCountryUpdate(c)}
         toggleMenu={toggleMenu} menuState={menuActive}
       />
+      <div className="2xl:px-1/20">
       <Banner textStyle={text} country={country} />
       <Menu2 textStyle={text} country={country}/>
       <BehindTheBeans textStyle={text} />
@@ -93,6 +94,7 @@ export default function Home() {
       <DownloadApp textStyle={text} country={country}/>
       {/* <News textStyle={text} /> */}
       <IG textStyle={text} />
+      </div>
       <Footer2 textStyle={text}/>
       
       {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}

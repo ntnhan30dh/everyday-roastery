@@ -198,7 +198,7 @@ const BehindTheBeans = props => {
         </p>
       </div>
 
-      <div className="picContainer1   py-8 md:-mt-1/20">
+      <div className="picContainer1   py-4 md:-mt-1/20">
         <div className="top relative md:w-1/2 md:ml-1/2  ">
           <Plx
             parallaxData={parallaxUp}
@@ -222,7 +222,7 @@ const BehindTheBeans = props => {
         </div>
         <Plx
           parallaxData={parallaxUp}
-          className="bottom hidden md:block w-1/3 ml-20  "
+          className="bottom hidden md:block w-1/3 ml-20 -mt-20 "
         >
           {hoverPic(
             data.pic1_3.childImageSharp.fluid,
@@ -232,7 +232,7 @@ const BehindTheBeans = props => {
         </Plx>
       </div>
 
-      <div className={`text2 ${textDiv} my-10 ml-auto mr-0`}>
+      <div className={`text2 ${textDiv} my-4 ml-auto mr-0`}>
         <h2 className={`${props.textStyle.h2_1} font-black  `}>
           100% Arabica, sourced locally{" "}
         </h2>

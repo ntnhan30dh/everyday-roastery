@@ -28,7 +28,7 @@ const HowToOrder = props => {
       <div className="lg:w-2/3">
         <img src={pics[step]} alt="" />
       </div>
-        <h3 className={`uppercase ${props.textStyle.h3} font-black`}>{headers[step]} </h3>
+        <h3 className={`uppercase ${props.textStyle.h3} font-black -mt-4`}>{headers[step]} </h3>
         <p className={`${props.textStyle.p} `}> {texts[step]}</p>
       </div>
     )

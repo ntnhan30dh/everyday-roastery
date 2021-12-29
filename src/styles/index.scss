@@ -101,11 +101,12 @@ textarea {
   .slick-next::before {
     content: "";
     background: url("../images/menu/Arrow.png"); /*url of image*/
-    height: 35px; /*height of image*/
-    width: 35px; /*width of image*/
+    height: 50px; /*height of image*/
+    width: 50px; /*width of image*/
     position: absolute;
     background-size: 35px 35px;
     background-repeat: no-repeat;
+    background-position: center;
     right: 1px;
     background-color: #FFFFFF;
    opacity: 0.9;
@@ -115,11 +116,13 @@ textarea {
   .slick-prev::before {
     content: "";
     background: url("../images/menu/Arrow_prev.png"); /*url of image*/
-    height: 35px; /*height of image*/
-    width: 35px; /*width of image*/
+    height: 50px; /*height of image*/
+    width: 50px; /*width of image*/
     position: absolute;
     background-size: 35px 35px;
     background-repeat: no-repeat;
+    background-position: center;
+
     left: 1px;
     background-color: #FFFFFF;
     opacity: 0.9;
@@ -193,7 +196,7 @@ button:focus {
 
 .hoverText:hover {
   background-clip: text !important;
-  background-size: contain;
+  background-size: contain !important;
   -webkit-text-fill-color: transparent;
   background-color: #fff;
   -webkit-text-stroke: 4px black;
@@ -219,4 +222,15 @@ button:focus {
 }
 .bg7:hover{
   background: url(../images/menu/bg/menuBg7.png);
+}
+
+.downloadApp{
+  button{
+    width: 100%;
+  }
+}
+
+
+  .ui.modal {
+    border-radius: 0 !important;
 }

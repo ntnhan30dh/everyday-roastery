@@ -143,7 +143,7 @@ const Menu = () => {
         </Slider>
         <div className="max-w-max mx-auto my-10">
         <OrderNow display={ 
-          <div className="orderBtn text-white text-sm sm:text-xl p-2 md:p-4 uppercase font-extrabold bg-blue ">
+          <div className="orderBtn text-white text-sm md:text-base p-2 md:p-4 uppercase font-extrabold bg-blue tracking-wider">
           Order Now!
           </div>
         }/>

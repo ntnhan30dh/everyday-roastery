@@ -65,7 +65,7 @@ const OurStory = props => {
         <div className="stepsContainer w-full xl:w-2/3 text-center mx-auto">
         <Img fluid={data.steps.childImageSharp.fluid} className="menu-pic " />
         <OrderNow display={ 
-          <div className="orderBtn text-white p-4 uppercase font-extrabold bg-blue">
+          <div className="orderBtn text-sm md:text-base text-white p-4 uppercase font-extrabold bg-blue tracking-wider">
           order now!
           </div>
         }/>

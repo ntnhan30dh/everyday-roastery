@@ -71,7 +71,7 @@ const Header2 = (props) => {
           <OrderNow
            country={props.country}
             display={
-              <div className="orderBtn ml-10 text-white text-sm md:text-base rounded-full py-3 px-6  uppercase font-bold bg-blue hidden xl:block ">
+              <div className="orderBtn ml-10 text-white text-sm md:text-base rounded-full py-3 px-6  uppercase font-bold bg-blue hidden xl:block tracking-wider ">
                 Order Now
               </div>
             }

@@ -90,6 +90,10 @@ module.exports = {
         '1/20': '5%',
         '19%': '19%',
        },
+       scale: {
+        '80': '.80',
+        '85': '.85',
+      }
      
     },
     opacity: {
@@ -114,3 +118,4 @@ module.exports = {
  
   plugins: [],
 }
+

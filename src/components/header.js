@@ -27,7 +27,7 @@ const Header = () => {
         </div>
         <div className="right">
         <OrderNow display={ 
-          <div className="orderBtn text-white text-sm md:text-xl p-2 md:p-4 uppercase font-extrabold bg-blue  " >
+          <div className="orderBtn text-white text-sm md:text-base p-2 md:p-4 uppercase font-extrabold bg-blue tracking-wider " >
           Order Now!
           </div>
         }/>

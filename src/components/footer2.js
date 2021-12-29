@@ -2,8 +2,8 @@ import React from "react"
 
 import fb from "../images/soMe/fb.png"
 import ig from "../images/soMe/ig.png"
-import twitter from "../images/soMe/twitter.png"
-import snapchat from "../images/soMe/snapchat.png"
+// import twitter from "../images/soMe/twitter.png"
+// import snapchat from "../images/soMe/snapchat.png"
 
 import foodpanda from "../images/logo-foodpanda.png"
 import talabat from "../images/logo-talabat.png"
@@ -27,7 +27,7 @@ const Footer2 = props => {
 
   const brands = [foodpanda, talabat, hungerstation, yemekspeti]
 
-  const soMeIcons = [fb, ig, twitter, snapchat]
+  const soMeIcons = [fb, ig, ]
   return (
     <section className="footer bg-black text-white py-20 xl:py-28 lg:px-1/20 xl:px-1/10" id="footer">
       <div className="top lg:flex flex-row-reverse">      
@@ -66,7 +66,7 @@ const Footer2 = props => {
       </div>
       <div>
       <h4 className="font-black text-center pt-10"> EXCLUSIVELY ON</h4>
-      <div className="brands flex w-full flex-wrap justify-center px-1/10">
+      <div className="brands flex w-full flex-wrap justify-center items-center px-1/10">
         {brands.map(b => {
           return (
             <div className="w-32">

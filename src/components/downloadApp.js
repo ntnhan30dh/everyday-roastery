@@ -86,7 +86,7 @@ const DownLoadApp = props => {
           <OrderNow
         country={props.country}
           display={
-            <div className=" hidden md:block orderBtn  text-white text-base md:text-base rounded-full py-6 px-8  uppercase font-bold bg-blue mt-16  max-w-max mx-auto ">
+            <div className=" hidden md:block orderBtn  text-white text-sm md:text-base rounded-full py-6 px-8  uppercase font-bold bg-blue mt-16  max-w-max mx-auto tracking-wider ">
               Order Now
             </div>
           }
@@ -125,7 +125,7 @@ const DownLoadApp = props => {
         <OrderNow
         country={props.country}
           display={
-            <div className=" md:hidden orderBtn  text-center  text-white text-base md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-20">
+            <div className=" md:hidden orderBtn  text-center  text-white text-sm md:text-base md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto mt-32 tracking-wider">
           Order Now
         </div>
           }

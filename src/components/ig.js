@@ -51,7 +51,6 @@ const IG = props => {
             settings: {
               slidesToShow: 1.3,
               slidesToScroll: 1,
-              infinite: false,
               arrows: false,
             },
           },
