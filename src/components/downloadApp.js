@@ -132,6 +132,8 @@ const DownLoadApp = props => {
         />
         
       </div>
+      <div id="news"> </div>
+
     </section>
   )
 }

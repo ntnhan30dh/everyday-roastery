@@ -93,9 +93,9 @@ export default function Home() {
       <HowToOrder textStyle={text} country={country} />
       <DownloadApp textStyle={text} country={country}/>
       {/* <News textStyle={text} /> */}
-      <IG textStyle={text} />
-      </div>
+      <IG textStyle={text} country={country} />
       <Footer2 textStyle={text}/>
+      </div>
       
       {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
       {/* <Menu/>
