@@ -16,9 +16,24 @@ import IG10 from '../images/ig/ig10.png'
 
 const IG = props => {
   const [insta, setInsta] = useState(undefined)
-  const token =
-  "IGQVJXUnRBMmNhTHZA6dlRRME5rcEpOQ0s5TFM1eWRNeUhTZA183aTVXNnZAWWWN2WTZAHemg5VFRmVGUtRWFEWmpna1c1bjNlclJRYVk4QmNaN1lGaHR3ZAnZAXQlA1SWtLMmJXMkNxYTRaV1ZATNUdydGQxSwZDZD"
-const url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type,permalink&access_token=${token}`
+
+  const token = {
+    "Saudi Arabia":"https://www.instagram.com/byeverydaysa/",
+    // "Singapore",
+     "Bahrain":"https://www.instagram.com/everyday.roastery.bh/",
+     "Kuwait":'https://www.instagram.com/everyday.roastery.kw/',
+    // "Malaysia",
+    // "Hungary",
+    //  "Germany":'IGQVJXUnRBMmNhTHZA6dlRRME5rcEpOQ0s5TFM1eWRNeUhTZA183aTVXNnZAWWWN2WTZAHemg5VFRmVGUtRWFEWmpna1c1bjNlclJRYVk4QmNaN1lGaHR3ZAnZAXQlA1SWtLMmJXMkNxYTRaV1ZATNUdydGQxSwZDZD',
+    "UAE":"IGQVJXUnRBMmNhTHZA6dlRRME5rcEpOQ0s5TFM1eWRNeUhTZA183aTVXNnZAWWWN2WTZAHemg5VFRmVGUtRWFEWmpna1c1bjNlclJRYVk4QmNaN1lGaHR3ZAnZAXQlA1SWtLMmJXMkNxYTRaV1ZATNUdydGQxSwZDZD",
+    "Qatar" :"https://www.instagram.com/everyday.roastery.qa/",
+    "Turkey" : "https://www.instagram.com/everyday.roastery.tk/",
+    'Egypt':'https://www.instagram.com/everyday.roastery.egypt/',
+  }
+
+  const t = 'IGQVJXUnRBMmNhTHZA6dlRRME5rcEpOQ0s5TFM1eWRNeUhTZA183aTVXNnZAWWWN2WTZAHemg5VFRmVGUtRWFEWmpna1c1bjNlclJRYVk4QmNaN1lGaHR3ZAnZAXQlA1SWtLMmJXMkNxYTRaV1ZATNUdydGQxSwZDZD'
+ 
+const url = `https://graph.instagram.com/me/media?fields=id,media_url,media_type&access_token=${token[props.country]}`
 
   const pics = [IG1,IG2,IG3,IG4,IG5,IG6,IG7,IG8,IG9,IG10]
   
@@ -75,15 +90,15 @@ const IGlinks = {
 }
 
 useEffect(() => {
+  setInsta(undefined)
   fetch(url)
     .then(data => data.json())
     .then(data => {
-      // const photosArray = data.data.user.edge_owner_to_timeline_media.edges
       setInsta(data.data)
        // console.log("insta",insta)
        console.log("data",data)
     })
-}, [])
+}, [props.country])
   return (
     <section className="ig mt-10 md:mt-48" id="ig">
     <a href={IGlinks[props.country]} target="_blank" className="text-black">
@@ -100,14 +115,18 @@ useEffect(() => {
            )
        })} */}
 
-       {insta &&
+       {insta ?
           insta
             .filter(photo => photo.media_type==="IMAGE")
             .map(photo => (
            
                 <img src={photo.media_url} alt="pic" className=" igFeeds " />
             
-            ))}
+            )):pics.map(i=>{
+           return (
+           <img src={i} alt="" />
+           )
+       }) }
       </Slider>
     </section>
   )
