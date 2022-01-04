@@ -53,9 +53,18 @@ const Banner = props => {
    </div>   
    <Img fluid={data.banner_m.childImageSharp.fluid} className="banner mobile" className=" md:hidden"/>
    
-            <div className="  md:hidden orderBtn  text-center  text-white text-sm md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-10 tracking-wider">
+            {/* <div className="  md:hidden orderBtn  text-center  text-white text-sm md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-10 tracking-wider">
+              Order Now
+            </div> */}
+            <OrderNow
+        country={props.country}
+          display={
+            <div className=" md:hidden orderBtn  text-center  text-white text-sm md:text-base rounded-full py-3 px-6 uppercase font-bold bg-blue w-4/5 mx-auto my-10 tracking-wider">
               Order Now
             </div>
+          }
+        />
+            
          
       
     </section>

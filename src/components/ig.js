@@ -25,8 +25,8 @@ const IG = props => {
     // "Malaysia",
     // "Hungary",
     //  "Germany":'IGQVJXUnRBMmNhTHZA6dlRRME5rcEpOQ0s5TFM1eWRNeUhTZA183aTVXNnZAWWWN2WTZAHemg5VFRmVGUtRWFEWmpna1c1bjNlclJRYVk4QmNaN1lGaHR3ZAnZAXQlA1SWtLMmJXMkNxYTRaV1ZATNUdydGQxSwZDZD',
-    "UAE":"IGQVJXUnRBMmNhTHZA6dlRRME5rcEpOQ0s5TFM1eWRNeUhTZA183aTVXNnZAWWWN2WTZAHemg5VFRmVGUtRWFEWmpna1c1bjNlclJRYVk4QmNaN1lGaHR3ZAnZAXQlA1SWtLMmJXMkNxYTRaV1ZATNUdydGQxSwZDZD",
-    "Qatar" :"https://www.instagram.com/everyday.roastery.qa/",
+    "UAE":"IGQVJVUzNpTFJRbGlxdk9sV09yeGhnZAEFnV3hkeVZAzUF96bHBHaU9za2RpY1FNWHZAnLWFpbUZAkcDZAWMFkwSXNjZAlRKalhsMkpKeUdYZAHlGVTdpLUZAJN3JYQ1ZAtT08xWkI3RkNjd3BETllpQ0VWX1lfRwZDZD",
+    "Qatar":"IGQVJVLWZACN1p6WUVYN2pPN1Q1ZAzk1ZA28yMjFiV1ZA3a05KVFdxcDh6b3Y5RWRDZAGtWTEl0YV80QzNnb1N3NWJBOWhLRTNWelRUbzBqWHdONi1YYWY3ejNWTUUydC1CdldoYjJudTVPaDRKZAVJkVDBtMQZDZD",
     "Turkey" : "https://www.instagram.com/everyday.roastery.tk/",
     'Egypt':'https://www.instagram.com/everyday.roastery.egypt/',
   }

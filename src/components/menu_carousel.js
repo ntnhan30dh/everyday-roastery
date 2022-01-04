@@ -91,7 +91,8 @@ const Carousel = props => {
       "Red Berry Ice Tea",
       "Peach Ice Tea",
       "Lemon Ice Tea",
-      "Pear & Peach Green Ice Tea",
+      "Red Berry Ice Tea",
+      
     ],
     "Hot Drinks": ["Hot Chocolate", "Black Tea", "Green Tea","Hot Chocolate"],
     tarot: ["Sharing", "Treat", "Focus", "Habit", "Break", "Energy"],
