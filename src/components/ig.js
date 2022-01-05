@@ -18,13 +18,9 @@ const IG = props => {
   const [insta, setInsta] = useState(undefined)
 
   const token = {
-    "Saudi Arabia":"https://www.instagram.com/byeverydaysa/",
-    // "Singapore",
-     "Bahrain":"https://www.instagram.com/everyday.roastery.bh/",
-     "Kuwait":'https://www.instagram.com/everyday.roastery.kw/',
-    // "Malaysia",
-    // "Hungary",
-    //  "Germany":'IGQVJXUnRBMmNhTHZA6dlRRME5rcEpOQ0s5TFM1eWRNeUhTZA183aTVXNnZAWWWN2WTZAHemg5VFRmVGUtRWFEWmpna1c1bjNlclJRYVk4QmNaN1lGaHR3ZAnZAXQlA1SWtLMmJXMkNxYTRaV1ZATNUdydGQxSwZDZD',
+    "Saudi Arabia":"IGQVJWd1BnS3A0UHlOckpVZATVXY0tJemE1eDZADOFRCb09ETmJjbkNhZAlRBMTQyWGxuYTZAPMURHekJXSkNlVi1HLWNVQnNLd09LMEp1YUxfemN5dUliNy1MbDUwMUVxZAVV3STJpajZAmWmNMWm44Rlp4MwZDZD",
+     "Bahrain":"IGQVJVc2E2azFtd0tQVXBEUmNlZAGNPSFVwVjFSUWUzU3VCc0hOLWwtUjZAXSlFIVXhCZAVNraC1ZAdDZAVUFZAXLVRPajNOMy1iWVk4ZAGRHSk5Xb3prRTFEaGhHN1VmNm1ReU9BeVFHbE9qU0EzVEttN1p3MAZDZD",
+     "Kuwait":'IGQVJWTEpVVVRueUlLaDUtNUM5VWJLZA0RVOTk3YTJMMmhlOXpuelpNWlhTLWhWYzBLTTRQTkpnNmNMV280cjVHaUdGcHBzNGo5OUhfb1BfcThNMDNvWGtXbFo5X0VPSzJhV3UzVFpFcXpTdGhodDdTSgZDZD',
     "UAE":"IGQVJVUzNpTFJRbGlxdk9sV09yeGhnZAEFnV3hkeVZAzUF96bHBHaU9za2RpY1FNWHZAnLWFpbUZAkcDZAWMFkwSXNjZAlRKalhsMkpKeUdYZAHlGVTdpLUZAJN3JYQ1ZAtT08xWkI3RkNjd3BETllpQ0VWX1lfRwZDZD",
     "Qatar":"IGQVJVLWZACN1p6WUVYN2pPN1Q1ZAzk1ZA28yMjFiV1ZA3a05KVFdxcDh6b3Y5RWRDZAGtWTEl0YV80QzNnb1N3NWJBOWhLRTNWelRUbzBqWHdONi1YYWY3ejNWTUUydC1CdldoYjJudTVPaDRKZAVJkVDBtMQZDZD",
     "Turkey" : "https://www.instagram.com/everyday.roastery.tk/",
