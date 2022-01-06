@@ -3,7 +3,10 @@ import Plx from "react-plx"
 
 import BG from "../images/downloadApp/downLoadApp_bg.png"
 import BG_mobile from "../images/downloadApp/downLoadApp_bg__mobile.png"
-import QR from "../images/downloadApp/QRcode.png"
+//import QR from "../images/downloadApp/QRcode.png"
+import QR_talabat from "../images/downloadApp/QR_talabat.png"
+import QR_foodpanda from "../images/downloadApp/QR_foodpanda.png"
+import QR_yemeksepeti from "../images/downloadApp/QR_yemeksepeti.png"
 import iPhone_front from "../images/downloadApp/iPhone_front.png"
 import iPhone_front_Yemeksepeti from "../images/downloadApp/iPhone_front_Yemeksepeti.png"
 import iPhone_front_Talabat from "../images/downloadApp/iPhone_front_Talabat.png"
@@ -75,6 +78,19 @@ const DownLoadApp = props => {
 
   const brandName = brand[props.country] || "FOODPANDA"
 
+  const QRCode = {
+    "Saudi Arabia":false,
+    "Singapore":QR_foodpanda,
+    "Bahrain":QR_talabat,
+    "Kuwait":QR_talabat,
+    "Malaysia":QR_foodpanda,
+    "Hungary":false,
+    "UAE":QR_talabat,
+    "Qatar":QR_talabat,
+    "Turkey":QR_yemeksepeti,
+    'Egypt':QR_talabat
+  }
+  const QRCodePic = QRCode[props.country] || QR_foodpanda
   return (
     <section className="downloadApp relative overflow-x-hidden md:overflow-x-visible lg:mt-44">
       <div className="w-full">
@@ -90,7 +106,7 @@ const DownLoadApp = props => {
           </h2>
           <div className="flex items-center  ">
             <div className="hidden md:block w-20 mr-6">
-              <img src={QR} alt="" />
+              <img src={QRCodePic} alt="" />
             </div>
             <p className=" text-lg text-white uppercase font-black mx-auto md:text-left  ">
               {" "}
