@@ -60,6 +60,21 @@ const DownLoadApp = props => {
 
   const iPhonePic = iPhone[props.country] || iPhone_front
 
+  const brand = {
+    "Saudi Arabia":"Hungerstation",
+    "Singapore":"FOODPANDA",
+    "Bahrain":"Talabat",
+    "Kuwait":"Talabat",
+    "Malaysia":"FOODPANDA",
+    "Hungary":"FOODPANDA",
+    "UAE":"Talabat",
+    "Qatar":"Talabat",
+    "Turkey":"Yemeksepeti",
+    'Egypt':"Talabat"
+  }
+
+  const brandName = brand[props.country] || "FOODPANDA"
+
   return (
     <section className="downloadApp relative overflow-x-hidden md:overflow-x-visible lg:mt-44">
       <div className="w-full">
@@ -79,7 +94,7 @@ const DownLoadApp = props => {
             </div>
             <p className=" text-lg text-white uppercase font-black mx-auto md:text-left  ">
               {" "}
-              ORder now via FOODPANDA app <br />
+              ORder now via {brandName} app <br />
               DOWNLOAD THE APP HERE!
             </p>
           </div>
