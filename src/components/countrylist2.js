@@ -1,18 +1,8 @@
 class CountryList2 {
     constructor() {
-      this.regions = this.regions.bind(this);
       this.countries = this.countries.bind(this);
     }
-    regions = () => {
-      let res = [
-        { key: "Latam", value: "Latam", text: "Latam" },
-        { key: "Nordics", value: "Nordics", text: "Nordics" },
-        { key: "Asia", value: "Asia", text: "Asia" },
-        { key: "Mena", value: "Mena", text: "Mena" },
-        { key: "CEE", value: "CEE", text: "CEE" },
-      ];
-      return res;
-    };
+   
    
     countries = () => { 
         let names =      [
@@ -22,7 +12,6 @@ class CountryList2 {
               "Kuwait",
               "Malaysia",
               "Hungary",
-              "Germany",
               "UAE",
               "Qatar",
               "Turkey",

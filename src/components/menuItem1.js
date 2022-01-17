@@ -10,6 +10,7 @@ import Spanish_Latte from "../images/menu/Hot Coffees/Spanish Latte.png"
 import Cappuccino from "../images/menu/Hot Coffees/Cappuccino.png"
 import Macchiato from "../images/menu/Hot Coffees/Macchiato.png"
 import Caramel_Latte from "../images/menu/Hot Coffees/Caramel Latte.png"
+import Caramel_Spanish_Latte from "../images/menu/Hot Coffees/Caramel Spanish Latte.png"
 import Mocha from "../images/menu/Hot Coffees/Mocha.png"
 import Salted_Caramel_Mocha from "../images/menu/Hot Coffees/Salted Caramel Mocha.png"
 import Mocha_Dark from "../images/menu/Hot Coffees/Dark Mocha.png"
@@ -20,6 +21,7 @@ import Iced_Latte from "../images/menu/Cold Coffees/Iced Latte.png"
 import Iced_Spanish_Latte from "../images/menu/Cold Coffees/Iced Spanish Latte.png"
 import Iced_Macchiato from "../images/menu/Cold Coffees/Iced Macchiato.png"
 import Iced_Caramel_Latte from "../images/menu/Cold Coffees/Iced Caramel Latte.png"
+import Iced_Caramel_Spanish_Latte from "../images/menu/Cold Coffees/Iced Caramel Spanish Latte.png"
 import Iced_Mocha from "../images/menu/Cold Coffees/Iced Mocha.png"
 import Iced_Dark_Mocha from "../images/menu/Cold Coffees/Iced Dark Mocha.png"
 import Iced_White_Mocha from "../images/menu/Cold Coffees/Iced White Mocha.png"
@@ -63,7 +65,7 @@ const MenuItem1 = props => {
     "Latte": Latte,
     "Vegan Latte": Latte,
     "Spanish Latte": Spanish_Latte,
-    "Caramel Spanish Latte": Spanish_Latte,
+    "Caramel Spanish Latte": Caramel_Spanish_Latte,
     "Cappuccino": Cappuccino,
     "Macchiato": Macchiato,
     "Caramel Latte": Caramel_Latte,
@@ -78,7 +80,7 @@ const MenuItem1 = props => {
     "Iced Latte": Iced_Latte,
     "Iced Vegan Latte": Iced_Latte,
     "Iced Spanish Latte": Iced_Spanish_Latte,
-    "Iced Caramel Spanish Latte": Iced_Spanish_Latte,
+    "Iced Caramel Spanish Latte": Iced_Caramel_Spanish_Latte,
     "Iced Macchiato": Iced_Macchiato,
     "Iced Caramel Latte": Iced_Caramel_Latte,
     "Iced Espresso Shaker": Iced_Espresso_Shaker,

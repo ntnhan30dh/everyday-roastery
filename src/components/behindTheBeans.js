@@ -180,8 +180,9 @@ const BehindTheBeans = props => {
 
   return (
     <section id="behindTheBeans" className="mx-4 md:mx-1/10 lg:mx-1/20 md:pt-20">
+    <div></div>
       <h1
-        className={`${props.textStyle.h1_1} font-black text-center max-w-max mx-auto mx-2 py-10 md:py-20 lg:py-24 hoverText bg1`}
+        className={`${props.textStyle.h1_1} font-black text-center max-w-max mx-auto mx-2 my-10 md:my-20 lg:my-24 hoverText bg1`}
       >
         Behind the beanS
       </h1>

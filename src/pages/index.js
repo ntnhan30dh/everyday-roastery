@@ -86,7 +86,7 @@ export default function Home() {
         handleCountryUpdate={(c) => handleCountryUpdate(c)}
         toggleMenu={toggleMenu} menuState={menuActive}
       />
-      <div className="2xl:px-1/20">
+      <div className="//2xl:px-1/20">
       <Banner textStyle={text} country={country} />
       <Menu2 textStyle={text} country={country}/>
       <BehindTheBeans textStyle={text} />
