@@ -10,6 +10,8 @@ import Menu2 from "../components/menu2"
 import BehindTheBeans from "../components/behindTheBeans"
 import HowToOrder from "../components/howToOrder"
 import DownloadApp from "../components/downloadApp"
+import CountryList2 from "../components/countrylist2"
+
 // import News from "../components/news"
 import IG from "../components/ig"
 import Footer2 from "../components/footer2"
@@ -23,6 +25,7 @@ import Footer2 from "../components/footer2"
 export default function Home() {
   //let [menuActive, setmenuActive] = useState(false);
   // let [vh, setVh] = useState(0);
+  const countryList = new CountryList2()
 
   let [country, setCountry] = useState("")
 
@@ -42,8 +45,10 @@ export default function Home() {
     fetch("https://ipapi.co/json/")
       .then(res => res.json())
       .then(response => {
-        setCountry(response.country_name)
-        console.log("Country: ", response)
+        if(countryList.countriesName().includes(response.country_name)){
+          setCountry(response.country_name)
+        } else  setCountry("Saudi Arabia")
+        console.log("Country: ", countryList.countriesName().includes(response.country_name))
       })
       .catch((data, status) => {
         console.log("Request failed")

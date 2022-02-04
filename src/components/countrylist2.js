@@ -29,6 +29,23 @@ class CountryList2 {
         return res;
       };
 
+
+    countriesName = () => { 
+      return     [
+            "Saudi Arabia",
+            "Singapore",
+            "Bahrain",
+            "Kuwait",
+            "Malaysia",
+            "Hungary",
+            "UAE",
+            "Qatar",
+            "Turkey",
+            'Egypt'
+          ];
+       
+    };
+
   }
   export default CountryList2;
   

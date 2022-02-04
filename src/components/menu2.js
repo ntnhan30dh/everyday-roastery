@@ -119,7 +119,7 @@ const Menu2 = props => {
       <ul className="flex justify-center  md:justify-around flex-wrap md:my-10">
         {menuTypeItem("Hot Coffees")}
         {menuTypeItem("Cold Coffees")}
-        {menuTypeItem("Frappes")}
+        {menuTypeItem("Frappés")}
         {menuTypeItem("Cold Drinks")}
         {menuTypeItem("Hot Drinks")}
       </ul>

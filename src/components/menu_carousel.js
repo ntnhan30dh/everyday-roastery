@@ -11,7 +11,7 @@ const Carousel = props => {
     speed: 500,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     //cssEase: "linear",
     responsive: [
@@ -74,18 +74,17 @@ const Carousel = props => {
       "Iced White Chocolate Mocha",
       "Iced Salted Caramel Mocha",
     ],
-    // need to update
-    Frappes: [
-      "Dark Mocha Frappe",
-      "White Mocha Frappe",
-      "Chocolate Chip Cookie Frappe",
-      "Chocolate Hazelnut Frappe",
-      "Vanilla Frappe",
-      "Salted Caramel Frappe",
-      "Chocolate Frappe",
-      "Strawberry Frappe",
-      "Green Apple Mint Frappe",
-      "Mango Frappe",
+    "Frappés": [
+      "Dark Mocha Frappé",
+      "White Mocha Frappé",
+      "Chocolate Chip Cookie Frappé",
+      "Chocolate Hazelnut Frappé",
+      "Vanilla Frappé",
+      "Salted Caramel Frappé",
+      "Chocolate Frappé",
+      "Strawberry Frappé",
+      "Green Apple Mint Frappé",
+      "Mango Frappé",
     ],
     "Cold Drinks": [
       "Red Berry Ice Tea",

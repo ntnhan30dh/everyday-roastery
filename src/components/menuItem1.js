@@ -90,16 +90,16 @@ const MenuItem1 = props => {
     "Iced Salted Caramel Mocha": Iced_Salted_Caramel_Mocha,
 
     // Frappes
-    "Dark Mocha Frappe": Dark_Mocha_Frappe,
-    "White Mocha Frappe": White_Mocha_Frappe,
-    "Chocolate Chip Cookie Frappe": Chocolate_Chip_Cookie_Frappe,
-    "Chocolate Hazelnut Frappe": Chocolate_Hazelnut_Frappe,
-    "Vanilla Frappe": Vanilla_Frappe,
-    "Salted Caramel Frappe": Salted_Caramel_Frappe,
-    "Chocolate Frappe": Chocolate_Frappe,
-    "Strawberry Frappe": Strawberry_Frappe,
-    "Green Apple Mint Frappe": Green_Apple_Mint_Frappe,
-    "Mango Frappe": Mango_Frappe,
+    "Dark Mocha Frappé": Dark_Mocha_Frappe,
+    "White Mocha Frappé": White_Mocha_Frappe,
+    "Chocolate Chip Cookie Frappé": Chocolate_Chip_Cookie_Frappe,
+    "Chocolate Hazelnut Frappé": Chocolate_Hazelnut_Frappe,
+    "Vanilla Frappé": Vanilla_Frappe,
+    "Salted Caramel Frappé": Salted_Caramel_Frappe,
+    "Chocolate Frappé": Chocolate_Frappe,
+    "Strawberry Frappé": Strawberry_Frappe,
+    "Green Apple Mint Frappé": Green_Apple_Mint_Frappe,
+    "Mango Frappé": Mango_Frappe,
 
     // cold Drink
     "Red Berry Ice Tea": Red_Berry_Ice_Tea,
@@ -116,78 +116,78 @@ const MenuItem1 = props => {
   }
 
   const description = {
-    "Americano": "Equal parts espresso and water creating a bold and dark flavor",
+    "Americano": "Let the coffee bean take centre stage with this effortless blend of rich espresso and hot water.",
     "Flat White":
-      "Perfect balance of espresso (extra shot) coated with a delicate layer of velvety milk foam",
+      "A perfectly balanced coffee made from a double shot of our signature espresso, simply topped with steamed whole milk.",
     "Cappuccino":
-      "Dark espresso enveloped with a thick layer of steamed, frothy milk foam",
+      "A coffee shop classic made of rich espresso, steamed milk and topped off with a creamy layer of rich foam.",
     "Latte":
-      "Espresso shot covered with a thin layer of fresh, steamed milk foam",
+      "A warming balance of espresso and steamed milk is finished with a feathery light layer of foam.",
     "Vegan Latte":
-      "Espresso shot covered with a thin layer of fresh, steamed oat milk foam",
+      "This plant-based version of a classic latte combines creamy oat milk poured over rich espresso.",
     "Spanish Latte":
-      "A sweet and flavorful blend of sweet condensed milk and our rich espresso",
+    "This Spanish twist combines espresso with condensed milk for a sweeter, creamier taste. Also known as Café con Leche, the Spaniards typically enjoy a cup of the sweet stuff with their breakfast.",
     "Caramel Spanish Latte":
-      "A sweet and flavorful blend of caramelized condensed milk and our rich espresso",
-    "Macchiato": "Freshly steamed fluffy milk foam with espresso roast",
+    "Take the sweetness up a level with this Spanish themed blend of rich caramel, condensed milk and espresso coffee." ,
+    "Macchiato": "A firm favourite from the streets of Italy- a classic shot of dark espresso is lightly garnished with a fluffy milk foam.",
     "Caramel Latte":
-      "A smooth blend of milk and caramel flavour, topped with espresso",
+      "Our signature latte is complemented by an infusion of caramel to give an indulgent twist to a coffee shop classic.",
     "Mocha":
-      "Delicious combination of our rich espresso with premium chocolate and frothed milk",
+      "A perfect duet of espresso and rich chocolate, blended with steamed velvety milk.",
     "Dark Chocolate Mocha":
-      "Premium rich, dark chocolate melted in creamy milk and topped with espresso and whipped cream",
+      "Awaken your senses with this blend of dark chocolate, signature espresso and steamed milk, topped off with a delicious layer of indulgent whipped cream.",
     "White Chocolate Mocha":
-      "Premium white chocolate melted in milk and topped with our rich espresso and whipped cream",
+      "Light and creamy, this delicate mix of white chocolate and espresso goes one step further with a velvety whipped cream topping.",
     "Salted Caramel Mocha":
-      "A creamy blend of premium dark chocolate, milk and caramel-flavoured syrup, topped with espresso and whipped cream",
+      "The perfect combination of salty and sweet. Dark chocolate and espresso are combined with salted caramel, steamed milk, and if that's not enough- we have added a layer of whipped cream for good measure!",
 
     // cold
     "Iced Americano":
-      "Equal parts espresso and water creating a bold and dark flavor, poured over ice",
+      "Awaken your senses with a simple shot of espresso topped with cold water and ice.",
     "Iced Latte":
-      "Espresso shot covered with a thin layer of fresh, steamed milk foam, poured over ice",
+      "A refreshing balance of espresso and milk, poured over ice.",
     "Iced Vegan Latte":
-      "Espresso shot covered with a thin layer of fresh, steamed oat milk foam, poured over ice",
+      " This plant-based version of a classic iced latte combines creamy oat milk poured over rich espresso.",
     "Iced Spanish Latte":
-      "A sweet and flavorful blend of sweet condensed milk and our rich espresso, poured over ice",
+      "Kick start your day like a Spaniard with this refreshingly cold coffee that combines espresso with condensed milk for a sweeter, creamier taste.",
     "Iced Caramel Spanish Latte":
-      "A sweet and flavorful blend of caramelized condensed milk and our rich espresso, poured over ice",
+      "Take the sweetness up a level with this ice cold blend of rich caramel, condensed milk and espresso coffee.",
     "Iced Macchiato":
-      "Freshly steamed fluffy milk foam, poured over ice and topped with our rich espresso",
+      "This refreshingly crisp take on an Italian classic combines dark espresso with cold milk.",
     "Iced Caramel Latte":
-      "A smooth blend of milk and caramel flavour, topped with espresso, poured over ice",
+      "This iced version of our latte is complemented by an infusion of caramel to give an indulgent twist to a coffee shop classic.",
     "Iced Espresso Shaker":
-      "Our rich espresso shaken over ice for the ultimate refresher",
+      "Keep it simple and kick start your day with this revitalising mix of ice, full bodied espresso and fresh milk.",
     "Iced Mocha":
-      "Delicious combination of our rich espresso with premium chocolate and frothed milk, poured over ice",
+      "Coffee and chocolate go hand-in-hand for this iced version of a classic mocha.",
     "Iced Dark Chocolate Mocha":
-      "Premium rich, dark chocolate melted in creamy milk, poured over ice, and topped with espresso and whipped cream",
+      "An icy blend of cold milk, dark chocolate and signature espresso, topped with a delicious layer of indulgent whipped cream.",
     "Iced White Chocolate Mocha":
-      "Premium white chocolate melted in milk, poured over ice, and topped with our rich espresso and whipped cream",
+      "Light, creamy and refreshing, this chilled mix of white chocolate and espresso goes one step further with a velvety whipped cream topping.",
     "Iced Salted Caramel Mocha":
-      "A creamy blend of premium dark chocolate, milk and caramel flavour, poured over ice, and topped with espresso and whipped cream",
+      "The perfect combination of salty and sweet. Dark chocolate and espresso are combined with salted caramel, iced milk, and if that's not enough- we have added a cool layer of whipped cream for good measure!",
 
     // FRAPPES
 
-    "Dark Mocha Frappe":
+    "Dark Mocha Frappé":
       "Luxuriate in this indulgent mix of premium dark chocolate, topped with espresso, cold milk, ice and a dollop of freshly whipped cream.",
-    "White Mocha Frappe	":
+    "White Mocha Frappé	":
       "Revel in cool frappé heaven with this delicate union of espresso, white chocolate, milk and ice, finished with a helping of velvety whipped cream.",
-    "Chocolate Chip Cookie Frappe":
+    "Chocolate Chip Cookie Frappé":
       "Our signature frappé is given a serious makeover with the sweet flavour of a chocolate chip cookie, plus the usual mix of espresso, milk, ice and topping of whipped cream.",
-    "Chocolate Hazelnut Frappe":
+    "Chocolate Hazelnut Frappé":
       "The rich flavour of roasted hazelnut has been combined with our premium blend of chocolate, along with dark espresso, milk and ice, decadently topped with a layer of whipped cream.",
-    "Vanilla Frappe":
+    "Vanilla Frappé":
       "Vanilla beans are introduced to our classic frappé drink, to give added sweetness and aroma to our signature fusion of coffee, milk, ice and whipped cream topping.",
-    "Salted Caramel Frappe":
+    "Salted Caramel Frappé":
       "This perfect combination of sweet and salty blends the indulgent flavours of salted caramel, with rich espresso, fresh milk, ice and a dollop of freshly whipped cream.",
-    "Chocolate Frappe":
+    "Chocolate Frappé":
       "Our premium dark chocolate takes centre stage in this refreshing frappé that mixes coffee, milk, ice and is delicately garnished with whipped cream.",
-    "Strawberry Frappe":
+    "Strawberry Frappé":
       "Our signature frappé is combined with the sweet juiciness of fresh strawberries in this invigorating summertime twist.",
-    "Green Apple Mint Frappe":
+    "Green Apple Mint Frappé":
       "A refreshing blend of ice and a combination of tart green apple and mint flavours",
-    "Mango Frappe":
+    "Mango Frappé":
       "The exotic flavour of mango is introduced to our classic chilled frappé to give a fruity kick to your day.",
 
     // cold drink

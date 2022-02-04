@@ -89,7 +89,7 @@ const Menu = () => {
         <h1 className="uppercase font-extrabold"> our menu</h1>
         <p className="text-xl">
           The <b>Everyday</b> menu has the treats for you. <br />
-          Cookies for Tuesday, Frappes for Friday, your way, <b>Everyday </b>
+          Cookies for Tuesday, Frappés for Friday, your way, <b>Everyday </b>
         </p>
       </div>
 
