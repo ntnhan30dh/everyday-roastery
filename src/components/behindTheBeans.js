@@ -189,13 +189,11 @@ const BehindTheBeans = props => {
 
       <div className={`text1 ${textDiv}`}>
         <h2 className={`${props.textStyle.h2_1} font-black  `}>
-          Delicious tastes,
+          Delicious taste,
           <br /> sleek design{" "}
         </h2>
         <p className={`${props.textStyle.p} ${p}`}>
-          Everyday Roastery's delicious taste and sleek design aims to deliver
-          the convenience and quality of your local neighbourhood coffee shop
-          directly to your door.
+        Everyday Roastery's delicious taste and sleek design aims to deliver the quality of a neighbourhood coffee shop directly to your door.
         </p>
       </div>
 

@@ -25,6 +25,16 @@ const Footer2 = props => {
     "Germany",
   ]
 
+  const IGlinks = {
+    "Saudi Arabia": "https://www.instagram.com/byeverydaysa/",
+    "Bahrain": "https://www.instagram.com/everyday.roastery.bh/",
+    "Kuwait": "https://www.instagram.com/everyday.roastery.kw/",
+    "UAE": "https://www.instagram.com/everyday.roastery.uae/",
+    "Qatar": "https://www.instagram.com/everyday.roastery.qa/",
+    "Turkey": "https://www.instagram.com/everyday.roastery.tk/",
+    "Egypt": "https://www.instagram.com/everyday.roastery.egypt/",
+  }
+
   const brands = [foodpanda, talabat, hungerstation, yemekspeti]
 
   const soMeIcons = [fb, ig, ]
@@ -50,14 +60,19 @@ const Footer2 = props => {
         <h3
           className={`uppercase ${props.textStyle.h3} font-black hidden lg:block`}
         >
-          we brew for <br /> you everyday{" "}
+        FRESHLY BREWED FOR  <br /> you everyday{" "}
         </h3>
         <h4 className='uppercase font-black hidden lg:block'>FOLLOW US ON SOCIAL MEDIA</h4>
         <div className="soMeWrap flex justify-center /lg:justify-start">
           {soMeIcons.map(i => {
             return (
               <div className="w-10 mx-4">
+              <a
+          href={IGlinks[props.country]}
+          target="_blank"
+        >
                 <img src={i} alt={i + " pic"} />
+                </a>
               </div>
             )
           })}

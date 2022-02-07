@@ -17,9 +17,9 @@ const HowToOrder = props => {
   }
 
   const texts = {
-    'step1': 'Place your order through our partner platforms',
+    'step1': 'Place your order through one of our partner platforms',
     'step2': 'Search for Everyday Roastery and select your favourite drinks',
-    'step3': 'Sit back and relax. Your order is on the way',
+    'step3': 'Sit back and relax. Your coffee order is on the way',
   }
 
   const card = step => {

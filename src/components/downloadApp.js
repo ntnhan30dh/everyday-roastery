@@ -110,7 +110,7 @@ const DownLoadApp = props => {
             </div>
             <p className=" text-lg text-white uppercase font-black mx-auto md:text-left  ">
               {" "}
-              ORder now via {brandName} app <br />
+              ORder now via {brandName} <br />
               DOWNLOAD THE APP HERE!
             </p>
           </div>

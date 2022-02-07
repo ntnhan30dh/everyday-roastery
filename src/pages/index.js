@@ -99,7 +99,7 @@ export default function Home() {
       <DownloadApp textStyle={text} country={country}/>
       {/* <News textStyle={text} /> */}
       <IG textStyle={text} country={country} />
-      <Footer2 textStyle={text}/>
+      <Footer2 textStyle={text} country={country}/>
       </div>
       
       {/* <MainSlides toggleMenu={toggleMenu} menuState={menuActive}/> */}
