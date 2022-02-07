@@ -8,7 +8,7 @@ import Treat from "../images/menu/tarot/cardTreat_back.png"
 import Focus from "../images/menu/tarot/cardFocus_back.png"
 import Habit from "../images/menu/tarot/cardHabit_back.png"
 import Break from "../images/menu/tarot/cardBreak_back.png"
-import Energy from "../images/menu/tarot/cardHabit_back.png"
+import Energy from "../images/menu/tarot/cardEnergy_back.png"
 
 import Sharing_front from "../images/menu/tarot/cardSharing_front.png"
 import Treat_front from "../images/menu/tarot/cardTreat_front.png"
@@ -38,8 +38,18 @@ const MenuItem2 = props => {
     Energy: Energy_front,
   }
 
+  const name = {
+    Sharing: 'Salted Caramel Frappé',
+    Treat: "Iced Latte",
+    Focus: "Americano",
+    Habit: "Latte",
+    Break: "Mocha",
+    Energy: "Chocolate Chip Cookie Frappé",
+  }
+
   return (
-    <div className="transform scale-95 hover:scale-100 duration-200 /mx-4 /hover:mx-2" onMouseLeave={()=>setIsFlipped(false)} >
+    <div className="transform scale-95 hover:scale-100 duration-200 /mx-4 /hover:mx-2"  onMouseLeave={()=>setIsFlipped(false)}
+  >
  
       <ReactCardFlip
         isFlipped={isFlipped}
@@ -51,21 +61,24 @@ const MenuItem2 = props => {
           <img src={pics[props.name]} alt={props.name} />
         </div>
 
+        <OrderNow
+           country={props.country}
+            display={
         <div onClick={() => setIsFlipped(!isFlipped)} className="relative">
         <div>
         <img src={pics_front[props.name]} alt={props.name} />
         </div>
-        <div className="absolute bottom-0 w-full text-center pb-1/5">
-        <OrderNow
-           country={props.country}
-            display={
-              <div className="orderBtn  text-white text-sm md:text-base rounded-full py-1 md:py-3 px-3 md:px-6  uppercase font-bold bg-blue tracking-wider ">
+        <div className="absolute bottom-0 w-full">
+          <div className="text-lg md:text-2xl font-black text-black my-4"> {name[props.name]}</div>
+        <div className=" text-center pb-1/10 w-fit mx-auto">
+              <div className="orderBtn  text-white text-sm md:text-base rounded-full py-1 md:py-3 px-3 md:px-6  uppercase font-bold bg-blue tracking-wider w-fit">
                 Order Now
               </div>
+        </div>
+        </div>
+        </div>
             }
           />
-        </div>
-        </div>
       </ReactCardFlip>
     </div>
   )

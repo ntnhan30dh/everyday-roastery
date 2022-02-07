@@ -33,6 +33,7 @@ module.exports = {
       },
       width: {
         '30': '30%',
+       // 'w-fit'	: 'fit-content',
        
       },
 
