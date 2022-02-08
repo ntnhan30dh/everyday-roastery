@@ -99,7 +99,7 @@ const Carousel = props => {
   const itemList = menuType[props.type]
   return (
     <div className="menuSlides my-10 px-2 md:mx-4 ">
-      <Slider {...settings} className="">
+      <Slider {...settings} className={props.type}>
         {itemList.map(i => {
           return props.type === "tarot" ? (
             <MenuItem2 name={i} country={props.country} />

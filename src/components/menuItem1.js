@@ -251,6 +251,7 @@ const MenuItem1 = props => {
       fluid
       size="medium"
       closeIcon
+      className="modal"
     >
       <div className="detailsItem md:flex ">
         <div className="img md:w-1/2 bg-white_grey">

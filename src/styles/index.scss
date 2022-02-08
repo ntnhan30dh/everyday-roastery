@@ -255,3 +255,13 @@ button:focus {
 .w-fit{
   width: fit-content;
 }
+.Drinks{
+  .slick-slide:nth-last-child(-n+1) {
+     color:red;
+     display: none;
+  }
+}
+
+// .Hot.Drinks{
+//   .slick-slide:nth-last-child(-n+1) {color:red; opacity: 0;}
+// }
