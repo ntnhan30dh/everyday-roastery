@@ -22,7 +22,6 @@ const Footer2 = props => {
     "Hungary",
     "Turkey",
     "Egypt",
-    "Germany",
   ]
 
   const IGlinks = {
@@ -46,7 +45,11 @@ const Footer2 = props => {
           Serve the world{" "}
         </h3>
         <div className="flex flex-wrap my-10">
-          {countries.map(c => {
+          {countries.sort(function(a, b){
+    if(a < b) { return -1; }
+    if(a > b) { return 1; }
+    return 0;
+}).map(c => {
             return (
               <span className="text-sm md:text-xl font-black uppercase w-1/2 md:w-1/3 my-2">
                 {c}
@@ -84,14 +87,14 @@ const Footer2 = props => {
       <div className="brands flex w-full flex-wrap justify-center items-center px-1/10">
         {brands.map(b => {
           return (
-            <div className="w-32">
+            <div className=" imgWrap w-32 mx-4 ">
               <img src={b} alt={b + " pic"} />
             </div>
           )
         })}
       </div>
       </div>
-      <p className="text-center mt-10"> © 2021 All Rights Reserved Mediakeys </p>
+      <p className="text-center mt-10"> © 2022 All Rights Reserved Mediakeys </p>
     </section>
   )
 }

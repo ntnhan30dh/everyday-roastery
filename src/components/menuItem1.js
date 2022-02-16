@@ -171,7 +171,7 @@ const MenuItem1 = props => {
 
     "Dark Mocha Frappé":
       "Luxuriate in this indulgent mix of premium dark chocolate, topped with espresso, cold milk, ice and a dollop of freshly whipped cream.",
-    "White Mocha Frappé	":
+    "White Mocha Frappé":
       "Revel in cool frappé heaven with this delicate union of espresso, white chocolate, milk and ice, finished with a helping of velvety whipped cream.",
     "Chocolate Chip Cookie Frappé":
       "Our signature frappé is given a serious makeover with the sweet flavour of a chocolate chip cookie, plus the usual mix of espresso, milk, ice and topping of whipped cream.",
