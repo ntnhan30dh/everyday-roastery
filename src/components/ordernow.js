@@ -18,7 +18,7 @@ function OrderNow(props) {
   }
 
   return (
-    <div className="transform hover:scale-110">
+    <div className={`${props.hover==="no"?"":"transform hover:scale-110"}`}>
     <a href={link[props.country]} target="_blank">
         <button className= {` ${props.buttonStyle}`} > 
           {props.display} 

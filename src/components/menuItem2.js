@@ -48,7 +48,7 @@ const MenuItem2 = props => {
   }
 
   return (
-    <div className="transform scale-95 hover:scale-100 duration-200 /mx-4 /hover:mx-2"  onMouseLeave={()=>setIsFlipped(false)}
+    <div className="transform scale-95 hover:scale-100 duration-200 /m-4 //hover:m-6"  onMouseLeave={()=>setIsFlipped(false)}
   >
  
       <ReactCardFlip
@@ -63,6 +63,7 @@ const MenuItem2 = props => {
 
         <OrderNow
            country={props.country}
+           hover="no"
             display={
         <div onClick={() => setIsFlipped(!isFlipped)} className="relative">
         <div>
