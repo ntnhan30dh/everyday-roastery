@@ -36,7 +36,7 @@ const Footer2 = props => {
 
   const brands = [foodpanda, talabat, hungerstation, yemekspeti]
 
-  const soMeIcons = [fb, ig, ]
+  const soMeIcons = [ ig, ]
   return (
     <section className="footer bg-black text-white py-20 xl:py-28 lg:px-1/20 xl:px-1/10" id="footer">
       <div className="top lg:flex flex-row-reverse">      
