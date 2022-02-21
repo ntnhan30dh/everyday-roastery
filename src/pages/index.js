@@ -94,11 +94,11 @@ export default function Home() {
       <div className="//2xl:px-1/20">
       <Banner textStyle={text} country={country} />
       <Menu2 textStyle={text} country={country}/>
-      {/* <BehindTheBeans textStyle={text} /> */}
-      {/* <HowToOrder textStyle={text} country={country} /> */}
-      {/* <DownloadApp textStyle={text} country={country}/> */}
+      <BehindTheBeans textStyle={text} />
+      <HowToOrder textStyle={text} country={country} />
+      <DownloadApp textStyle={text} country={country}/>
       {/* <News textStyle={text} /> */}
-      {/* <IG textStyle={text} country={country} /> */}
+      <IG textStyle={text} country={country} />
       <Footer2 textStyle={text} country={country}/>
       </div>
       
