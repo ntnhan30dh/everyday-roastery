@@ -13,7 +13,7 @@ function OrderNow(props) {
               "Germany":'https://www.foodpanda.de',
               "UAE":'https://www.talabat.com/uae/everyday-roastery-business-bay',
               "Qatar":'https://www.talabat.com/qatar/everyday-coffee-roastery',
-              "Turkey":'https://www.yemeksepeti.com/isparta',
+              "Turkey":'https://www.yemeksepeti.com/banabi/kategori/kahve/sicak-kahveler-2',
               'Egypt':'https://www.talabat.com/egypt/everyday-roastery-tagammoa-5--banks-center'
   }
 
