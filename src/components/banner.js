@@ -34,7 +34,7 @@ const Banner = props => {
           Your Everyday COFFEE <br /> 
           <span className="  ">
             {" "}
-            a tap away.{" "}
+            a tap away{" "}
           </span>
         </h2>
         <OrderNow

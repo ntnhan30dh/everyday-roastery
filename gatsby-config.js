@@ -23,6 +23,15 @@ module.exports = {
   },
   `gatsby-plugin-sharp`,
   `gatsby-transformer-sharp`,
-  'gatsby-plugin-postcss'
+  'gatsby-plugin-postcss',
+  {
+    resolve: "gatsby-plugin-google-tagmanager",
+    options: {
+      id: "G-P0QB19LWF9",
+      includeInDevelopment: false,
+
+     
+    },
+  },
 ],
 }
